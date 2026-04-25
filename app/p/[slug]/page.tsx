@@ -159,28 +159,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
         </section>
 
-        {/* Marketing/TikTok Script Section */}
-        {product.marketing && (
-          <section className="py-24 bg-secondary/50 border-y border-border/40">
-            <div className="mx-auto max-w-3xl px-6 text-center">
-              <div className="glass inline-block px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-8">
-                Creator Insights
-              </div>
-              <h2 className="text-3xl font-bold mb-6 italic font-serif">Viral Strategy</h2>
-              <div className="space-y-8 text-left glass p-8 lg:p-12 rounded-[2rem]">
-                <div>
-                  <h4 className="text-xs font-black uppercase tracking-widest text-accent mb-2">The Hook</h4>
-                  <p className="text-lg font-medium">"{product.marketing.hook}"</p>
-                </div>
-                <div>
-                  <h4 className="text-xs font-black uppercase tracking-widest text-accent mb-2">The Script</h4>
-                  <p className="text-muted-foreground italic leading-relaxed">{product.marketing.script}</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <section className="py-24 lg:py-32">

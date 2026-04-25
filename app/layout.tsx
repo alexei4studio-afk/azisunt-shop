@@ -1,42 +1,47 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const inter = Inter({ 
   subsets: ["latin"],
-  variable: '--font-inter',
+  variable: '--font-sans',
+})
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: '--font-serif',
 })
 
 export const metadata: Metadata = {
-  title: 'azisunt | Healthy Recipes & Fit Lifestyle',
-  description: 'Curated wellness products, clothing, and lifestyle essentials for a healthier you.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  title: 'AZISUNT | The Art of Viral Discovery & Market Research',
+  description: 'Descoperă produsele care definesc tendințele globale. Cercetare de piață bazată pe date și curatoriere AI pentru un stil de viață modern și rafinat.',
+  keywords: 'trending products, viral tiktok, luxury tech, home decor hacks, market research gadgets, azisunt biz',
+  openGraph: {
+    title: 'AZISUNT | Curated Excellence',
+    description: 'The Art of Viral Discovery. Descoperă produsele viitorului.',
+    url: 'https://azisunt.shop',
+    siteName: 'AZISUNT',
+    locale: 'ro_RO',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#FFFFFF',
+  themeColor: '#FDFCF0', // Champagne theme color
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 }
 
 export default function RootLayout({
@@ -45,8 +50,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+    <html lang="ro" className="scroll-smooth">
+      <head>
+        <link rel="canonical" href="https://azisunt.shop" />
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

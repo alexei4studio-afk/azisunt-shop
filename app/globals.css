@@ -18,37 +18,38 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
-  --radius-lg: 2rem;
-  --radius-md: 1.25rem;
+  --radius-lg: 2.5rem;
+  --radius-md: 1.5rem;
   --radius-sm: 0.75rem;
 }
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #000000;
-  --primary: #000000;
+  /* Champagne & Slate Luxury Palette */
+  --background: #FDFCF0; /* Champagne Cream */
+  --foreground: #1A1A1A; /* Deep Charcoal */
+  --primary: #C5A059;    /* Soft Gold / Champagne */
   --primary-foreground: #FFFFFF;
-  --secondary: #F2F2F7;
-  --secondary-foreground: #000000;
-  --muted: #F2F2F7;
-  --muted-foreground: #86868B;
-  --accent: #0055FF; /* Vibrant Electric Blue - extremely visible */
+  --secondary: #F4F1E1;  /* Soft Beige */
+  --secondary-foreground: #1A1A1A;
+  --muted: #F4F1E1;
+  --muted-foreground: #7C7C7C;
+  --accent: #C5A059;
   --accent-foreground: #FFFFFF;
-  --border: #D2D2D7;
+  --border: #E8E4D0;
 }
 
 .dark {
-  --background: #000000;
-  --foreground: #FFFFFF;
-  --primary: #FFFFFF;
-  --primary-foreground: #000000;
-  --secondary: #1C1C1E;
-  --secondary-foreground: #FFFFFF;
-  --muted: #1C1C1E;
-  --muted-foreground: #8E8E93;
-  --accent: #0A84FF;
-  --accent-foreground: #FFFFFF;
-  --border: #38383A;
+  --background: #0F0F0F;
+  --foreground: #FDFCF0;
+  --primary: #C5A059;
+  --primary-foreground: #0F0F0F;
+  --secondary: #1A1A1A;
+  --secondary-foreground: #FDFCF0;
+  --muted: #1A1A1A;
+  --muted-foreground: #A1A1A1;
+  --accent: #C5A059;
+  --accent-foreground: #0F0F0F;
+  --border: #2A2A2A;
 }
 
 @layer base {
@@ -56,7 +57,7 @@
     @apply border-border/60 outline-none;
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-accent/20;
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
     text-rendering: optimizeLegibility;
   }
   h1, h2, h3, h4 {
@@ -66,15 +67,12 @@
 
 @layer components {
   .glass {
-    @apply bg-background/80 backdrop-blur-2xl border-b border-border/40 sticky top-0 z-50;
+    @apply bg-background/80 backdrop-blur-3xl border-b border-border/40 sticky top-0 z-50;
   }
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-10 py-5 rounded-full font-bold transition-all hover:scale-[1.02] active:scale-[0.98] shadow-2xl shadow-black/10;
+    @apply bg-primary text-primary-foreground px-12 py-5 rounded-full font-bold transition-all hover:scale-[1.03] hover:shadow-2xl hover:shadow-primary/20 active:scale-[0.97];
   }
   .card-hover {
-    @apply transition-all duration-700 hover:shadow-[0_32px_64px_-16px_rgba(0,0,0,0.12)] hover:-translate-y-2;
-  }
-  .badge-viral {
-    @apply bg-accent text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-accent/20;
+    @apply transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(197,160,89,0.15)] hover:-translate-y-3;
   }
 }

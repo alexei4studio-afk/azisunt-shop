@@ -33,9 +33,14 @@ export async function getProductsByCategory(category: string): Promise<Product[]
 }
 
 export async function getFeaturedProducts(): Promise<Product[]> {
-  return products.slice(0, 4)
+  // Return the latest AI-curated products first
+  return [...products].reverse().slice(0, 8)
 }
 
 export async function getNewProducts(): Promise<Product[]> {
-  return products.slice(0, 4);
+  return [...products].reverse().slice(0, 4);
+}
+
+export async function getAllProducts(): Promise<Product[]> {
+  return [...products].reverse();
 }

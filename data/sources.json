@@ -1,0 +1,18 @@
+[
+  {
+    "id": "s1",
+    "name": "eMAG Romania",
+    "baseUrl": "https://www.emag.ro",
+    "affiliateType": "profitshare",
+    "status": "active",
+    "lastScout": "2026-04-25"
+  },
+  {
+    "id": "s2",
+    "name": "Temu Global",
+    "baseUrl": "https://www.temu.com",
+    "affiliateType": "direct/arbitrage",
+    "status": "active",
+    "lastScout": "2026-04-25"
+  }
+]
