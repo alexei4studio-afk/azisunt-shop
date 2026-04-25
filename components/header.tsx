@@ -6,8 +6,9 @@ import { Menu, X, ShoppingBag, Search } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navigation = [
-  { name: 'Noutăți', href: '/category/new' },
-  { name: 'Lifestyle', href: '/category/clothing' },
+  { name: 'Home & Deco', href: '/category/home' },
+  { name: 'Tech & Gear', href: '/category/tech' },
+  { name: 'Lifestyle', href: '/category/lifestyle' },
   { name: 'Wellness', href: '/category/wellness' },
   { name: 'Toate', href: '/category/all' },
 ]
@@ -30,7 +31,10 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-12 flex items-center justify-between">
         <div className="flex lg:flex-1">
           <Link href="/" className="group flex items-center gap-2">
-            <span className="text-2xl font-bold tracking-tighter transition-colors group-hover:text-accent">
+            <span className={cn(
+                "text-2xl font-bold tracking-tighter transition-colors",
+                isScrolled ? "text-foreground" : "text-foreground"
+            )}>
               AZISUNT
             </span>
             <span className="bg-accent text-[10px] text-white font-black px-1.5 py-0.5 rounded uppercase tracking-widest">
@@ -44,7 +48,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium tracking-wide text-foreground/80 hover:text-foreground transition-colors relative group"
+              className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/70 hover:text-foreground transition-colors relative group"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full" />
@@ -59,6 +63,7 @@ export function Header() {
           <button className="relative text-foreground/80 hover:text-foreground transition-colors">
             <ShoppingBag className="h-5 w-5" />
             <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-[10px] font-medium text-white">
+              {/* This would ideally be dynamic */}
               0
             </span>
           </button>
@@ -76,15 +81,15 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div className={cn(
-        "lg:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-xl transition-transform duration-500 pt-24 px-6",
+        "lg:hidden fixed inset-0 z-40 bg-background/98 backdrop-blur-xl transition-transform duration-500 pt-32 px-10",
         mobileMenuOpen ? "translate-x-0" : "translate-x-full"
       )}>
-        <div className="flex flex-col gap-y-8">
+        <div className="flex flex-col gap-y-10">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-3xl font-light tracking-tight border-b border-border pb-4"
+              className="text-4xl font-bold tracking-tighter border-b border-border/40 pb-6"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
