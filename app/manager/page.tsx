@@ -13,7 +13,10 @@ import {
   RefreshCcw,
   Store,
   Zap,
-  ArrowRight
+  ArrowRight,
+  Link as LinkIcon,
+  Copy,
+  Check
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -23,6 +26,13 @@ export default function ManagerDashboard() {
   const [loading, setLoading] = useState(true)
   const [showImportModal, setShowImportModal] = useState(false)
   const [importConfig, setImportConfig] = useState({ sourceId: '', url: '', count: 5 })
+  
+  // Profitshare Tool State
+  const [targetUrl, setTargetUrl] = useState('')
+  const [generatedLink, setGeneratedLink] = useState('')
+  const [copied, setCopied] = useState(false)
+
+  const PS_EMAG_HASH = "15748683"
 
   useEffect(() => {
     // Load products and sources from public/data
@@ -39,10 +49,21 @@ export default function ManagerDashboard() {
     })
   }, [])
 
+  const generatePSLink = () => {
+    if (!targetUrl) return
+    const link = `https://l.profitshare.ro/l/${PS_EMAG_HASH}?redirect=${encodeURIComponent(targetUrl)}`
+    setGeneratedLink(link)
+  }
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(generatedLink)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
   const handleBatchImport = () => {
     alert(`Comandă trimisă către Agent: Importă ${importConfig.count} produse de la ${importConfig.sourceId} folosind link-ul: ${importConfig.url}`);
     setShowImportModal(false);
-    // Aici s-ar apela un API route care pornește mega-batch-scouter.js
   }
 
   return (
@@ -98,7 +119,42 @@ export default function ManagerDashboard() {
           </div>
         </div>
 
-        {/* Modal Import (Simulat) */}
+        {/* Profitshare Deep Link Tool */}
+        <div className="mb-12 bg-white/5 border border-white/10 rounded-[2.5rem] p-8">
+          <div className="flex items-center gap-3 mb-6">
+            <LinkIcon className="h-6 w-6 text-primary" />
+            <h2 className="text-xl font-bold">Profitshare Deep Link Generator (eMAG)</h2>
+          </div>
+          <div className="flex gap-4">
+            <input 
+              type="text" 
+              placeholder="Lipește link-ul eMAG (ex: https://www.emag.ro/pd/DYLSG43BM/)" 
+              className="flex-1 bg-black/40 border border-white/10 rounded-xl p-4 text-sm"
+              value={targetUrl}
+              onChange={(e) => setTargetUrl(e.target.value)}
+            />
+            <button 
+              onClick={generatePSLink}
+              className="bg-primary text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform"
+            >
+              Generează
+            </button>
+          </div>
+          {generatedLink && (
+            <div className="mt-6 p-4 bg-black/40 border border-white/10 rounded-xl flex items-center justify-between">
+              <code className="text-xs text-primary truncate max-w-[80%]">{generatedLink}</code>
+              <button 
+                onClick={copyToClipboard}
+                className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest"
+              >
+                {copied ? <Check className="h-3 w-3 text-green-500" /> : <Copy className="h-3 w-3" />}
+                {copied ? 'Copiat' : 'Copiază'}
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Modal Import */}
         {showImportModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-6">
             <div className="bg-[#1A1A1A] border border-white/10 w-full max-w-lg rounded-[2.5rem] p-10 space-y-8">
@@ -108,7 +164,7 @@ export default function ManagerDashboard() {
                 <div>
                   <label className="text-[10px] uppercase font-bold text-white/40 mb-2 block">Selectează Magazinul</label>
                   <select 
-                    className="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm"
+                    className="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-sm text-white"
                     onChange={(e) => setImportConfig({...importConfig, sourceId: e.target.value})}
                   >
                     <option value="">Alege sursa...</option>
@@ -174,78 +230,52 @@ export default function ManagerDashboard() {
                 <CheckCircle2 className="h-20 w-20" />
              </div>
              <p className="text-[10px] uppercase tracking-widest text-white/40 mb-2 font-bold">Catalog Health</p>
-             <p className="text-xl font-bold text-green-500">OPTIMIZED</p>
+             <p className="text-xl font-bold text-green-500 uppercase tracking-widest">Optimized</p>
           </div>
         </div>
 
-        {/* Sources Table */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <Store className="h-6 w-6 text-primary" /> Rețeaua de Magazine
-          </h2>
-          <div className="bg-white/5 border border-white/10 rounded-[2.5rem] overflow-hidden">
-             <table className="w-full text-left">
-                <thead className="bg-white/5 text-[10px] uppercase tracking-widest text-white/40">
-                  <tr>
-                    <th className="px-8 py-6">Magazin</th>
-                    <th className="px-8 py-6">Tip Afiliere</th>
-                    <th className="px-8 py-6">Status</th>
-                    <th className="px-8 py-6">Acțiuni Quick-Import</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  {sources.map(s => (
-                    <tr key={s.id} className="hover:bg-white/[0.02]">
-                      <td className="px-8 py-6 font-bold">{s.name}</td>
-                      <td className="px-8 py-6 text-white/60">{s.affiliateType}</td>
-                      <td className="px-8 py-6">
-                        <span className="bg-green-500/10 text-green-500 text-[9px] font-black px-2 py-1 rounded-full uppercase">
-                          {s.status}
-                        </span>
-                      </td>
-                      <td className="px-8 py-6">
-                         <button className="flex items-center gap-2 text-[10px] font-black uppercase text-primary tracking-widest">
-                           Import Next 5 <ArrowRight className="h-3 w-3" />
-                         </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-             </table>
-          </div>
-        </div>
-
-        {/* Existing Products List... (kept from before but improved styling) */}
-        <h2 className="text-2xl font-bold mb-6">Inventar Detaliat</h2>
+        {/* Inventory List */}
+        <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
+          <Zap className="h-6 w-6 text-primary" /> Inventar Detaliat
+        </h2>
         <div className="bg-white/5 border border-white/10 rounded-[2.5rem] overflow-hidden">
           <table className="w-full text-left">
             <thead>
               <tr className="text-[10px] uppercase tracking-widest text-white/40 border-b border-white/10">
                 <th className="px-8 py-6 font-bold">Produs</th>
                 <th className="px-8 py-6 font-bold">Preț</th>
-                <th className="px-8 py-6 font-bold">Surse</th>
-                <th className="px-8 py-6 font-bold">Status Marketing</th>
+                <th className="px-8 py-6 font-bold">Colecție</th>
+                <th className="px-8 py-6 font-bold">Link Afiliere</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {products.map((p) => (
-                <tr key={p.id}>
+                <tr key={p.id} className="hover:bg-white/[0.02] transition-colors">
                   <td className="px-8 py-6">
                     <div className="flex items-center gap-4">
-                      <img src={p.images[0]} className="h-10 w-10 rounded-lg object-cover" />
+                      <img src={p.images[0]} className="h-10 w-10 rounded-lg object-cover border border-white/10" />
                       <div>
                         <p className="font-bold text-sm">{p.name}</p>
-                        <p className="text-[10px] text-white/40 uppercase tracking-tighter">{p.category}</p>
+                        <p className="text-[9px] text-white/40 uppercase font-black tracking-widest">
+                          {p.affiliateUrl.includes('emag') ? 'eMAG' : 'Temu'}
+                        </p>
                       </div>
                     </div>
                   </td>
-                  <td className="px-8 py-6 font-bold">{p.price} Lei</td>
-                  <td className="px-8 py-6 text-xs text-white/60">
-                    {p.affiliateUrl.includes('emag') ? 'eMAG' : 'Temu'}
+                  <td className="px-8 py-6 font-bold text-sm">{p.price} Lei</td>
+                  <td className="px-8 py-6">
+                    <span className="text-[9px] font-black uppercase tracking-widest bg-white/10 px-2 py-1 rounded">
+                      {p.category}
+                    </span>
                   </td>
                   <td className="px-8 py-6">
-                    <div className="flex items-center gap-2 text-[10px] font-black text-accent uppercase tracking-widest">
-                       <Video className="h-3 w-3" /> Script Ready
+                    <div className="flex items-center gap-3">
+                      <a href={p.affiliateUrl} target="_blank" className="p-2 hover:bg-white/10 rounded-lg transition-colors text-white/40 hover:text-primary">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                      <button className="p-2 hover:bg-white/10 rounded-lg transition-colors text-white/40">
+                        <RefreshCcw className="h-4 w-4" />
+                      </button>
                     </div>
                   </td>
                 </tr>

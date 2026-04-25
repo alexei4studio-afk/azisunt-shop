@@ -9,14 +9,45 @@ import { ArrowRight, Sparkles, TrendingUp, ShieldCheck } from 'lucide-react'
 export default async function HomePage() {
   const featuredProducts = await getFeaturedProducts()
 
+  const collections = [
+    {
+      name: 'The Sanctuary',
+      slug: 'sanctuary',
+      description: 'Home & Wellness',
+      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1000',
+      accent: 'Essential'
+    },
+    {
+      name: 'The Executive',
+      slug: 'executive',
+      description: 'Tech & Productivity',
+      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1616533703901-2a5b6f345686?w=1000',
+      accent: 'Innovation'
+    },
+    {
+      name: 'The Voyager',
+      slug: 'voyager',
+      description: 'Lifestyle & Travel',
+      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000',
+      accent: 'Escape'
+    },
+    {
+      name: 'The Athlete',
+      slug: 'athlete',
+      description: 'Sport & Performance',
+      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1000',
+      accent: 'Power'
+    }
+  ]
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
       
       <main>
         <Hero />
 
-        {/* Value Proposition - Marketing Research Focus */}
+        {/* Value Proposition */}
         <section className="py-24 border-y border-border/40">
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -51,65 +82,49 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* New Categories Section - Luxury Edition */}
+        {/* Collections Section */}
         <section className="py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">The Collections</h2>
-              <p className="text-muted-foreground text-lg italic font-serif">Selectate pentru a defini stilul tău de viață.</p>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 italic font-serif">The Collections</h2>
+              <p className="text-muted-foreground text-lg font-light">Selectate pentru a defini stilul tău de viață modern.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <Link 
-                href="/category/home"
-                className="group relative h-[500px] overflow-hidden rounded-[3rem] card-hover"
-              >
-                <img 
-                  src="https://images.weserv.nl/?url=images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1000" 
-                  alt="Home & Deco" 
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="absolute bottom-12 left-12">
-                  <p className="text-primary text-xs font-black uppercase tracking-[0.3em] mb-2">Essential</p>
-                  <h3 className="text-4xl font-bold text-white mb-4">Home & Deco</h3>
-                  <div className="inline-flex items-center gap-2 text-white/80 group-hover:text-white transition-colors">
-                    <span className="text-sm font-bold uppercase tracking-widest">Explorează</span>
-                    <ArrowRight className="h-4 w-4" />
+              {collections.map((col) => (
+                <Link 
+                  key={col.slug}
+                  href={`/category/${col.slug}`}
+                  className="group relative h-[500px] overflow-hidden rounded-[3rem] card-hover"
+                >
+                  <img 
+                    src={col.image} 
+                    alt={col.name} 
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute bottom-12 left-12">
+                    <p className="text-primary text-xs font-black uppercase tracking-[0.3em] mb-2">{col.accent}</p>
+                    <h3 className="text-4xl font-bold text-white mb-2">{col.name}</h3>
+                    <p className="text-white/60 text-sm mb-6 font-medium">{col.description}</p>
+                    <div className="inline-flex items-center gap-2 text-white/80 group-hover:text-white transition-colors">
+                      <span className="text-sm font-bold uppercase tracking-widest">Explorează</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
                   </div>
-                </div>
-              </Link>
-
-              <Link 
-                href="/category/tech"
-                className="group relative h-[500px] overflow-hidden rounded-[3rem] card-hover"
-              >
-                <img 
-                  src="https://images.weserv.nl/?url=images.unsplash.com/photo-1616533703901-2a5b6f345686?w=1000" 
-                  alt="Tech & Gear" 
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="absolute bottom-12 left-12">
-                  <p className="text-primary text-xs font-black uppercase tracking-[0.3em] mb-2">Innovation</p>
-                  <h3 className="text-4xl font-bold text-white mb-4">Tech & Gear</h3>
-                  <div className="inline-flex items-center gap-2 text-white/80 group-hover:text-white transition-colors">
-                    <span className="text-sm font-bold uppercase tracking-widest">Explorează</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Featured Products - High Contrast */}
+        {/* Featured Products */}
         <section className="py-32 bg-secondary/30 border-y border-border/40">
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
               <div>
                 <p className="text-primary text-xs font-black uppercase tracking-[0.4em] mb-4">Selected</p>
-                <h2 className="text-5xl font-bold tracking-tight">Viral Picks</h2>
+                <h2 className="text-5xl font-bold tracking-tight leading-none">Viral Picks</h2>
               </div>
               <Link 
                 href="/category/all"
@@ -128,7 +143,7 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Final CTA - SEO/Trust focused */}
+        {/* Final CTA */}
         <section className="py-32 bg-primary text-primary-foreground text-center">
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="text-4xl md:text-6xl font-bold mb-8 italic font-serif">Investește în Calitate.</h2>

@@ -49,6 +49,8 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   }
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params
   const info = categoryInfo[slug]

@@ -38,7 +38,7 @@ export function Header() {
               AZISUNT
             </span>
             <span className="bg-accent text-[10px] text-white font-black px-1.5 py-0.5 rounded uppercase tracking-widest">
-              BIZ
+              SHOP
             </span>
           </Link>
         </div>

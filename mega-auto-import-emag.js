@@ -74,18 +74,25 @@ async function importEmag(emagUrl, affiliateUrl) {
         console.log("💾 [4/4] Integrare în Mall...");
         const products = JSON.parse(fs.readFileSync(DATABASE_PATH, 'utf8'));
         
+        // Construim link-ul de afiliere dinamic pentru Profitshare (Deep Link)
+        // Folosim hash-ul de Deep Link descoperit: 15748683
+        // Parametrul corect este ?redirect=
+        const psDeepLinkHash = "15748683"; 
+        const finalAffiliateUrl = `https://l.profitshare.ro/l/${psDeepLinkHash}?redirect=${encodeURIComponent(emagUrl)}`;
+        console.log(`🔗 Deep Link Profitshare generat: ${finalAffiliateUrl}`);
+
         const newProduct = {
             id: `emag-${Date.now()}`,
             slug: aiResponse.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^\w-]+/g, ''),
             name: aiResponse.name,
-            price: parseInt(rawData.price) / 100, // eMAG has decimals often
+            price: parseInt(rawData.price) / 100,
             comparePrice: (parseInt(rawData.price) / 100) * 1.4,
-            category: aiResponse.category || "tech",
+            category: aiResponse.category || "executive",
             description: aiResponse.description,
             features: aiResponse.features,
             images: [`/products/${imageName}`],
             inStock: true,
-            affiliateUrl: affiliateUrl,
+            affiliateUrl: finalAffiliateUrl,
             isViral: true,
             badge: "DISCOVERY OF THE WEEK",
             marketing: aiResponse.marketing
