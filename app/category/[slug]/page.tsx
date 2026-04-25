@@ -1,29 +1,29 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ProductCard } from '@/components/product-card'
-import { getProductsByCategory, getShopifyProducts } from '@/lib/products'
+import { getProductsByCategory, getAllProducts } from '@/lib/products'
 import { notFound } from 'next/navigation'
 
 const categoryInfo: Record<string, { title: string; description: string }> = {
-  home: {
-    title: 'Home & Living',
-    description: 'Transformă-ți spațiul cu obiecte care îmbină utilul cu estetica modernă.'
+  sanctuary: {
+    title: 'The Sanctuary',
+    description: 'Home, Deco & Wellness. Transformă-ți spațiul într-un refugiu de liniște și rafinament.'
   },
-  tech: {
-    title: 'Tech & Gadgets',
-    description: 'Inovație la îndemâna ta. Gadgeturi testate care îți fac viața mai ușoară.'
+  executive: {
+    title: 'The Executive',
+    description: 'Tech & Productivity. Instrumente de precizie pentru un stil de lucru sofisticat.'
   },
-  lifestyle: {
-    title: 'Lifestyle Essentials',
-    description: 'Accesorii și obiecte care definesc stilul tău de viață activ și modern.'
+  voyager: {
+    title: 'The Voyager',
+    description: 'Lifestyle & Travel. Accesorii esențiale pentru exploratorul urban modern.'
   },
-  wellness: {
-    title: 'Wellness & Health',
-    description: 'Echipamente și accesorii pentru o stare de bine zilnică.'
+  athlete: {
+    title: 'The Athlete',
+    description: 'Sport & Performance. Optimizare umană prin tehnologie și design minimalist.'
   },
   all: {
-    title: 'Toate Produsele',
-    description: 'Explorează întreaga noastră colecție curată de produse virale.'
+    title: 'The Discovery Catalog',
+    description: 'Explorează întreaga noastră selecție curată de produse virale globale.'
   }
 }
 
@@ -32,7 +32,7 @@ interface CategoryPageProps {
 }
 
 export async function generateStaticParams() {
-  return ['home', 'tech', 'lifestyle', 'wellness', 'all'].map((slug) => ({ slug }))
+  return ['sanctuary', 'executive', 'voyager', 'athlete', 'all'].map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: CategoryPageProps) {
@@ -57,14 +57,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound()
   }
 
-  const categoryProducts = await (slug === 'all' ? getShopifyProducts() : getProductsByCategory(slug))
+  const categoryProducts = await (slug === 'all' ? getAllProducts() : getProductsByCategory(slug))
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       
       <main className="pt-32 pb-24 lg:pt-48">
-        {/* Category Header */}
         <section className="pb-16 lg:pb-24 border-b border-border/40">
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
@@ -84,7 +83,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </div>
         </section>
 
-        {/* Products Grid */}
         <section className="py-20 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-12">
             {categoryProducts.length > 0 ? (
@@ -96,7 +94,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             ) : (
               <div className="text-center py-32 glass rounded-[3rem]">
                 <p className="text-xl text-muted-foreground italic font-serif">În curând...</p>
-                <p className="mt-4 text-sm text-muted-foreground/60 uppercase tracking-widest">Revenim cu noutăți virale în această categorie.</p>
+                <p className="mt-4 text-sm text-muted-foreground/60 uppercase tracking-widest">Revenim cu noutăți virale în această colecție.</p>
               </div>
             )}
           </div>

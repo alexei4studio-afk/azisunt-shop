@@ -6,11 +6,11 @@ import { Menu, X, ShoppingBag, Search } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navigation = [
-  { name: 'Home & Deco', href: '/category/home' },
-  { name: 'Tech & Gear', href: '/category/tech' },
-  { name: 'Lifestyle', href: '/category/lifestyle' },
-  { name: 'Wellness', href: '/category/wellness' },
-  { name: 'Toate', href: '/category/all' },
+  { name: 'The Sanctuary', href: '/category/sanctuary' },
+  { name: 'The Executive', href: '/category/executive' },
+  { name: 'The Voyager', href: '/category/voyager' },
+  { name: 'The Athlete', href: '/category/athlete' },
+  { name: 'Discovery', href: '/category/all' },
 ]
 
 export function Header() {

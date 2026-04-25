@@ -41,7 +41,11 @@ async function importEmag(emagUrl, affiliateUrl) {
             2. Scrie o descriere sofisticată care să explice de ce este o investiție în stilul de viață.
             3. Generează 3 beneficii elitiste.
             4. Prompt imagine (English) pentru Stable Diffusion XL: Context "Quiet Luxury" (birou designer, lumină naturală, texturi premium).
-            5. Categorie: ["tech", "lifestyle", "home", "wellness"].
+            5. Categorie: ["sanctuary", "executive", "voyager", "athlete"].
+               - "sanctuary": Home, Deco, Wellness.
+               - "executive": Tech, Office.
+               - "voyager": Travel, Lifestyle.
+               - "athlete": Sport, Fitness.
             6. Script TikTok Viral (15s).
 
             Returnează DOAR JSON:
