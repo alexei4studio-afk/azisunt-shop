@@ -1,0 +1,236 @@
+[
+  {
+    "id": "v1",
+    "slug": "lampa-monitor-led",
+    "name": "Lampă Monitor LED Anti-Glare - Viral TikTok",
+    "price": 69,
+    "comparePrice": 189,
+    "category": "tech",
+    "description": "Lampa LED anti-glare, virală TikTok! Iluminat optim, fără reflexii, protejează ochii. Ideală pentru muncă și gaming. Experiență vizuală superioară.",
+    "features": [
+      "Elimină reflexiile: Fără strălucire pe ecran, pentru o vizualizare clară.",
+      "Reduce oboseala ochilor: Confort sporit la utilizare prelungită.",
+      "Design viral TikTok: Produs modern și apreciat de comunitate.",
+      "Iluminare uniformă: Optimizează spațiul de lucru, fără pâlpâire."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1616533703901-2a5b6f345686?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok",
+    "badge": "TOP VIRAL 2026"
+  },
+  {
+    "id": "v2",
+    "slug": "senzor-miscare-led-bucatarie",
+    "name": "Bandă LED Wireless cu Senzor de Mișcare - 54 LED",
+    "price": 45,
+    "comparePrice": 120,
+    "category": "home",
+    "description": "Iluminează inteligent! Banda LED wireless cu senzor de mișcare și 54 LED-uri este soluția perfectă pentru confort și siguranță. Instalare ușoară, lumină automată exact unde ai nevoie.",
+    "features": [
+      "Activare automată la detecția mișcării, economisind energie.",
+      "Instalare wireless facilă, oriunde dorești, fără cabluri.",
+      "Iluminare adaptabilă pentru orice spațiu: dressing, holuri, scări, bucătării.",
+      "Lumină puternică și clară (54 LED) pentru vizibilitate optimă."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok Shop",
+    "badge": "MUST-HAVE 2026"
+  },
+  {
+    "id": "v3",
+    "slug": "mini-aspirator-birou",
+    "name": "Mini Aspirator Desktop - Wireless & Reîncărcabil",
+    "price": 35,
+    "comparePrice": 85,
+    "category": "tech",
+    "description": "Curăță rapid biroul cu mini aspiratorul wireless și reîncărcabil! Ideal pentru praf, firimituri, tastaturi. Compact, portabil și puternic, menține spațiul impecabil.",
+    "features": [
+      "Mobilitate deplină: design wireless și baterie reîncărcabilă pentru curățare oriunde.",
+      "Curățare eficientă: elimină rapid praf, firimituri, scame și resturi de pe birou sau tastatură.",
+      "Design compact și portabil: ușor de depozitat, transportat și integrat discret în spațiul tău.",
+      "Ușor de utilizat: funcționare simplă, golire rapidă a recipientului și ��ntreținere minimă."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1589903303904-a04225bd0300?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "Reels",
+    "badge": "BEST SELLER"
+  },
+  {
+    "id": "v4",
+    "slug": "compresor-portabil-auto",
+    "name": "Mini Compresor Portabil Inteligent - Digital 150 PSI",
+    "price": 129,
+    "comparePrice": 349,
+    "category": "car",
+    "description": "Compresor auto portabil, digital și inteligent (150 PSI). Umflă anvelope, biciclete și mingi rapid, precis, oriunde. Soluția ta compactă pentru drum și urgențe!",
+    "features": [
+      "Portabilitate maximă: compact și ușor de transportat.",
+      "Umflare precisă cu display digital și oprire automată.",
+      "Putere de 150 PSI pentru anvelope auto, biciclete, mingi etc.",
+      "Utilizare intuitivă și rapidă în orice situație."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok Shop",
+    "badge": "TOP TRENDING"
+  },
+  {
+    "id": "v5",
+    "slug": "perie-electrica-curatare",
+    "name": "Perie Electrică de Curățare 8-în-1 - Spin Scrubber",
+    "price": 89,
+    "comparePrice": 220,
+    "category": "home",
+    "description": "Curăță eficient și fără efort orice suprafață! Peria electrică 8-în-1 Spin Scrubber revoluționează curățenia casei. Versatilitate maximă și rezultate impecabile, rapid.",
+    "features": [
+      "Curățare multifuncțională pentru orice colț al casei.",
+      "Elimină murdăria persistentă fără efort, datorită puterii rotative.",
+      "Economisești timp și energie, obținând rezultate impecabile rapid.",
+      "Ajunge cu ușurință în spațiile greu accesibile și colțuri."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok",
+    "badge": "PROBLEM SOLVER"
+  },
+  {
+    "id": "v6",
+    "slug": "mini-imprimanta-termica",
+    "name": "Mini Imprimantă Termică Portabilă - Bluetooth",
+    "price": 75,
+    "comparePrice": 165,
+    "category": "tech",
+    "description": "Imprimă instantaneu oriunde! Mini imprimantă termică portabilă cu Bluetooth. Perfectă pentru etichete, chitanțe, notițe de pe telefon. Fără cerneală, super ușor de folosit.",
+    "features": [
+      "Imprimare mobilă oricând, oriunde.",
+      "Fără cartușe de cerneală: economisești bani și timp.",
+      "Conectare rapidă Bluetooth la smartphone-ul tău.",
+      "Ideală pentru etichete, chitanțe, notițe și liste."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok",
+    "badge": "BACK TO SCHOOL"
+  },
+  {
+    "id": "v7",
+    "slug": "organizator-cabinet-pullout",
+    "name": "Organizator Cabinet Pull-Out - Maximizare Spațiu",
+    "price": 55,
+    "comparePrice": 140,
+    "category": "home",
+    "description": "Maximizează spațiul în orice cabinet! Organizatorul pull-out oferă depozitare inteligentă, acces rapid și ordine perfectă. Ideal pentru bucătărie și baie.",
+    "features": [
+      "Optimizează la maximum spațiul intern al cabinetului.",
+      "Asigură acces rapid și complet la toate articolele.",
+      "Oferă organizare impecabilă și vizibilitate crescută.",
+      "Instalare simplă și adaptabilitate în diverse spații."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "Reels",
+    "badge": "HOME HACK"
+  },
+  {
+    "id": "v8",
+    "slug": "proiector-galaxy-smart",
+    "name": "Proiector Galaxy Smart - Efect Aurora 2026",
+    "price": 95,
+    "comparePrice": 280,
+    "category": "home",
+    "description": "Transformă-ți spațiul cu Proiectorul Galaxy Smart 2026! Experimentează un spectacol de lumină Aurora boreală, cu control inteligent, pentru o atmosferă magică și relaxantă acasă.",
+    "features": [
+      "Control inteligent via aplicație și voce.",
+      "Proiecții spectaculoase de Aurora boreală și galaxii.",
+      "Creează o atmosferă relaxantă și personalizabilă.",
+      "Funcții avansate de programare și temporizare."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1617839625591-e5a789593135?w=800&q=80"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://temu.to/k/eye6kqbhfbg",
+    "isViral": true,
+    "viralSource": "TikTok",
+    "badge": "VISUAL WOW"
+  },
+  {
+    "id": "auto-1777121706726",
+    "slug": "colectia-epifanie",
+    "name": "Colecția Epifanie",
+    "price": 50,
+    "comparePrice": 150,
+    "category": "viral",
+    "description": "Descoperiți Colecția Epifanie – o selecție curatorială de obiecte ce transcend așteptările. Fiecare piesă este o revelație a valorii și a esteticii, îmbinând accesibilitatea cu un rafinament neașteptat. Permiteți-vă să fiți surprins de frumusețea ascunsă și inovația ingenioasă, transformând fiecare achiziție într-un moment de pură încântare. Experiența shopping-ului de lux inteligent, redefinită.",
+    "features": [
+      "Descoperiri Curatoriale",
+      "Valoare Redefinită",
+      "Eleganță Accesibilă"
+    ],
+    "images": [
+      "/products/ai-1777121706722.png"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://www.temu.com/ro/1pc-portable-electric-fruit-juicer-usb-rechargeable-mini-smoothie-blender-for-kitchen-office-travel-g-601099513361427.html",
+    "isViral": true,
+    "badge": "AI CURATED"
+  },
+  {
+    "id": "auto-1777122070853",
+    "slug": "arhetipul-rafinat",
+    "name": "Arhetipul Rafinat",
+    "price": 50,
+    "comparePrice": 150,
+    "category": "viral",
+    "description": "Descoperiți Arhetipul Rafinat, o expresie sublimă a designului contemporan, unde minimalismul întâlnește funcționalitatea impecabilă. Fiecare piesă este o dovadă a măiestriei artizanale, creată din materiale de cea mai înaltă calitate, alese pentru durabilitatea și estetica lor superioară. O fuziune armonioasă între inovație și tradiție, acest obiect redefineste conceptul de lux accesibil, aducând un suflu de eleganță discretă în orice spațiu. Ideal pentru colecționari și pentru cei ce apreciază frumusețea atemporală și sustenabilitatea.",
+    "features": [
+      "Design minimalist atemporal, adaptabil oricărui interior de lux.",
+      "Confecționat manual din materiale premium, cu o atenție meticuloasă la detalii și finisaje impecabile.",
+      "Durabilitate excepțională și performanță superioară, garantând o investiție pe termen lung."
+    ],
+    "images": [
+      "/products/ai-1777122070847.png"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://www.temu.com/ro/1pc-manual-vegetable-cutter-multifunctional-kitchen-slicer-with-4-interchangeable-blades-for-shredding-slicing-and-grating-potatoes-carrots-and-vegetables-g-601099512395350.html",
+    "isViral": true,
+    "badge": "AI CURATED",
+    "marketing": {
+      "hook": "Ai văzut asta la Temu? Gândește-te din nou.",
+      "script": "Vizual: (0-3s) Detaliu macro, close-up pe textură, finisaj impecabil. Voce calmă, sofisticată: \"Crezi că știi luxul?\" (3-7s) Obiectul elegant, într-un spațiu minimalist, cu lumini ambientale calde. Voce: \"Ce-ar fi dacă eleganța ar fi o descoperire, nu o etichetă?\" (7-12s) O mână cu manichiură impecabilă atinge delicat suprafața. Voce: \"Arhetipul Rafinat. Reimaginați-vă așteptările.\" (12-15s) Zoom out pe obiect, aranjat artistic, logo subtil și adresă website. Voce: \"Exclusiv acum.\"",
+      "hashtags": [
+        "#LuxReinventat",
+        "#DesignMinimalist"
+      ]
+    }
+  }
+]

@@ -1,0 +1,14 @@
+node_modules
+.next
+.env
+.env.local
+.vercel
+*.log
+package-lock.json
+pnpm-lock.yaml
+test-gemini*.js
+list-models.js
+generate-image*.js
+batch-seo-agent.js
+mega-auto-import.js
+data/temp_urls.txt

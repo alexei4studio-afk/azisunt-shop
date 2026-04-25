@@ -1,0 +1,191 @@
+/*
+  ═══════════════════════════════════════════════════════════
+  azisunt.shop — Customizări Temă Dawn
+  Fișier: assets/temu-custom.css
+  ═══════════════════════════════════════════════════════════
+
+  CUM SE INSTALEAZĂ:
+  1. Shopify Admin → Online Store → Themes
+  2. Dawn → Actions → Edit code
+  3. În folder "Assets" → Add a new asset → temu-custom.css
+  4. Copiază tot conținutul acestui fișier
+  5. În layout/theme.liquid, adaugă înainte de </head>:
+     {{ 'temu-custom.css' | asset_url | stylesheet_tag }}
+*/
+
+/* ─────────────────────────────────────────────────────────
+   1. ASCUNDE "Add to Cart" și "Buy Now" pe produsele Temu
+   ───────────────────────────────────────────────────────── */
+
+/*
+  Metoda: ascundem butoanele pentru produsele cu tagul "temu-afiliat"
+  În Shopify Liquid (product.liquid sau main-product.liquid), 
+  înfășoară secțiunea de butoane astfel:
+
+  {% unless product.tags contains 'temu-afiliat' %}
+    {{ butonul_original }}
+  {% endunless %}
+
+  SAU folosim CSS pe baza unui data-attribute pe body:
+  (adaugă în product.liquid: <body data-product-tags="{{ product.tags | join: ',' }}">)
+*/
+
+body[data-product-tags*="temu-afiliat"] .product-form__buttons,
+body[data-product-tags*="temu-afiliat"] .shopify-payment-button,
+body[data-product-tags*="temu-afiliat"] form[action="/cart/add"] button,
+body[data-product-tags*="temu-afiliat"] .product-form__submit {
+  display: none !important;
+}
+
+/* ─────────────────────────────────────────────────────────
+   2. BUTONUL "VEZI PE TEMU" — vibrant, portocaliu
+   ───────────────────────────────────────────────────────── */
+
+.btn-temu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #FF6D00;
+  color: #ffffff !important;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+
+  padding: 16px 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+
+  /* Umbră colorată */
+  box-shadow: 0 4px 20px rgba(255, 109, 0, 0.45);
+
+  /* Animație vibrație */
+  animation: temu-pulse 2.5s ease-in-out infinite;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-temu:hover {
+  background: #E65100;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(255, 109, 0, 0.6);
+  animation: none; /* oprește vibrația la hover */
+}
+
+.btn-temu:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Iconița săgeată */
+.btn-temu::after {
+  content: "→";
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-temu:hover::after {
+  transform: translateX(4px);
+}
+
+/* Animație puls subtil */
+@keyframes temu-pulse {
+  0%   { box-shadow: 0 4px 20px rgba(255, 109, 0, 0.45); }
+  50%  { box-shadow: 0 4px 30px rgba(255, 109, 0, 0.75), 0 0 0 6px rgba(255, 109, 0, 0.12); }
+  100% { box-shadow: 0 4px 20px rgba(255, 109, 0, 0.45); }
+}
+
+/* ─────────────────────────────────────────────────────────
+   3. BADGE "Disponibil pe Temu" — lângă preț
+   ───────────────────────────────────────────────────────── */
+
+.temu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFF3E0;
+  color: #E65100;
+  border: 1.5px solid #FFB74D;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.temu-badge::before {
+  content: "🛒";
+  font-size: 1.3rem;
+}
+
+/* ─────────────────────────────────────────────────────────
+   4. SECȚIUNE PREȚ — styling îmbunătățit
+   ───────────────────────────────────────────────────────── */
+
+.temu-price-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.temu-price-label {
+  font-size: 1.3rem;
+  color: #757575;
+  font-weight: 400;
+}
+
+.temu-price-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #FF6D00;
+}
+
+.temu-price-note {
+  font-size: 1.2rem;
+  color: #9E9E9E;
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────
+   5. BANNER AFILIAT — sub descriere
+   ───────────────────────────────────────────────────────── */
+
+.temu-affiliate-banner {
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFF3E0 100%);
+  border-left: 4px solid #FF6D00;
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 1.4rem;
+}
+
+.temu-affiliate-banner p {
+  margin: 0;
+  color: #5D4037;
+}
+
+.temu-affiliate-banner strong {
+  color: #E65100;
+}
+
+/* ─────────────────────────────────────────────────────────
+   6. RESPONSIVE — mobile
+   ───────────────────────────────────────────────────────── */
+
+@media (max-width: 750px) {
+  .btn-temu {
+    font-size: 1.4rem;
+    padding: 14px 24px;
+  }
+  .temu-price-value {
+    font-size: 2rem;
+  }
+}

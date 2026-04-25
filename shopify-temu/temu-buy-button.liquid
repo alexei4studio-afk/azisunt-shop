@@ -1,0 +1,55 @@
+{% comment %}
+  ═══════════════════════════════════════════════════════════
+  azisunt.shop — Buton Temu pe pagina de produs
+  Fișier: snippets/temu-buy-button.liquid
+  ═══════════════════════════════════════════════════════════
+
+  CUM SE INSTALEAZĂ:
+  1. Shopify Admin → Online Store → Themes → Dawn → Edit code
+  2. Folder "Snippets" → Add new snippet → temu-buy-button.liquid
+  3. Copiază conținutul acestui fișier
+  4. În sections/main-product.liquid, găsește zona unde e butonul
+     de cumpărare și adaugă:
+     {% render 'temu-buy-button', product: product %}
+  5. Tot în main-product.liquid, găsește <body sau primul div mare
+     și adaugă atributul de tag pentru CSS:
+     <div data-product-tags="{{ product.tags | join: ',' }}">
+{% endcomment %}
+
+{% if product.tags contains 'temu-afiliat' %}
+
+  {%- comment -%} Extrage linkul afiliat din metafield {%- endcomment -%}
+  {%- assign temu_link = product.metafields.custom.link_temu.value -%}
+
+  {%- comment -%} Fallback dacă metafieldul e gol {%- endcomment -%}
+  {%- if temu_link == blank -%}
+    {%- assign temu_link = "https://temu.to/k/eljyc8qntcq" -%}
+  {%- endif -%}
+
+  <div class="temu-price-wrapper">
+    <span class="temu-price-label">Preț aproximativ:</span>
+    <span class="temu-price-value">
+      {{ product.price | money }}
+    </span>
+    <span class="temu-price-note">verifică prețul actual pe Temu</span>
+  </div>
+
+  <a
+    href="{{ temu_link }}"
+    target="_blank"
+    rel="nofollow noopener"
+    class="btn-temu"
+    aria-label="Vezi {{ product.title }} pe Temu"
+  >
+    Cumpără pe Temu
+  </a>
+
+  <div class="temu-affiliate-banner">
+    <p>
+      ℹ️ Acest produs este disponibil pe platforma Temu.
+      <strong>Prețul poate varia</strong> — apasă butonul de mai sus
+      pentru prețul actual și disponibilitate.
+    </p>
+  </div>
+
+{% endif %}
