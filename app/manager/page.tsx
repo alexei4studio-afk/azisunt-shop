@@ -35,10 +35,11 @@ export default function ManagerDashboard() {
   const PS_EMAG_HASH = "15748683"
 
   useEffect(() => {
-    // Load products and sources from public/data
+    const timestamp = Date.now();
+    // Load products from API and sources from public/data
     Promise.all([
-      fetch('/data/trending-products.json').then(res => res.json()),
-      fetch('/data/sources.json').then(res => res.json())
+      fetch(`/api/products?v=${timestamp}`).then(res => res.json()),
+      fetch(`/data/sources.json?v=${timestamp}`).then(res => res.json())
     ]).then(([pData, sData]) => {
       setProducts(pData.reverse())
       setSources(sData)
