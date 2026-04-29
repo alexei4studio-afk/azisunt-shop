@@ -7,8 +7,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 lg:gap-24">
           {/* Brand */}
           <div className="md:col-span-2 space-y-6">
-            <Link href="/" className="text-2xl font-bold tracking-tighter">
-              AZISUNT
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-2xl font-black tracking-tighter">AZISUNT</span>
+              <span className="bg-accent text-[10px] text-white font-black px-1.5 py-0.5 rounded uppercase tracking-widest">SHOP</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm italic font-serif">
               "The Art of Discovery." Curatorierea celor mai fascinante tendințe globale, transformate în experiențe de lux accesibile.

@@ -34,84 +34,62 @@ async function downloadImage(url, filepath) {
     });
 }
 
-async function importEmag(emagUrl) {
-    console.log(`\n🚀 [eMAG Agent] Securing: ${emagUrl} (SUPABASE)`);
+async function importTemu(temuUrl) {
+    console.log(`\n🚀 [Temu Agent] Import: ${temuUrl} (SUPABASE)`);
     let browser;
     try {
         browser = await chromium.launch({ headless: true });
         const context = await browser.newContext({
-            userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            viewport: { width: 1920, height: 1080 }
+            userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         });
         const page = await context.newPage();
         
-        await page.goto(emagUrl, { waitUntil: 'networkidle', timeout: 90000 });
-        await page.waitForSelector('.product-page-container', { timeout: 20000 }).catch(() => {});
+        await page.goto(temuUrl, { waitUntil: 'networkidle', timeout: 60000 });
+        await page.waitForTimeout(3000);
 
         const rawData = await page.evaluate(() => {
-            const container = document.querySelector('.product-page-container');
-            const titleEl = container ? container.querySelector('h1.page-title') : document.querySelector('h1.page-title');
-            const priceEl = container ? container.querySelector('.product-new-price') : document.querySelector('.product-new-price');
+            const titleEl = document.querySelector('h1');
+            const priceEl = document.querySelector('[class*="price"]');
             
-            if (!titleEl) return null;
+            if (!titleEl || titleEl.innerText.includes('Sign in')) return null;
 
             const title = titleEl.innerText.trim();
-            const price = priceEl ? priceEl.innerText.replace(/[^\d]/g, '') : "0";
+            const price = priceEl ? priceEl.innerText.replace(/[^\d]/g, '') : "50";
             
-            const gallery = document.querySelector('.product-gallery-inner') || document.querySelector('.main-product-gallery') || document.querySelector('#product-gallery');
-            let imgs = [];
-            if (gallery) {
-                imgs = Array.from(gallery.querySelectorAll('img'))
-                            .map(img => img.src || img.dataset.src || img.getAttribute('data-lazy-src'))
-                            .filter(src => src && src.includes('http') && !src.includes('base64') && !src.includes('avatar') && !src.includes('logo'))
-                            .map(src => src.replace('small', 'l').replace('msg_small', 'l').replace('thumbnail', 'l'));
-            }
+            let imgs = Array.from(document.querySelectorAll('img'))
+                        .map(img => img.src || img.dataset.src)
+                        .filter(src => src && src.includes('http') && src.includes('goods') && !src.includes('base64'))
+                        .slice(0, 3);
             
-            if (imgs.length === 0) {
-               imgs = Array.from(document.querySelectorAll('img'))
-                            .filter(img => (img.width > 300 || img.height > 300) && img.src.includes('http'))
-                            .map(img => img.src)
-                            .slice(0, 3);
-            }
-            
-            return { title, price, imgs: [...new Set(imgs)].slice(0, 3) };
+            return { title, price, imgs: [...new Set(imgs)] };
         });
         await browser.close();
 
         if (!rawData || !rawData.title || rawData.title.length < 5) {
-            throw new Error("Date insuficiente. Verifică manual URL-ul.");
+            throw new Error("Date invalide extrase (posibil login wall).");
         }
 
         console.log(`   💎 Detectat: ${rawData.title}`);
 
         const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
         const aiPrompt = `
-            Produs eMAG: "${rawData.title}".
-            SARCINĂ:
-            1. Verifică dacă e produs de lux/tech/home (ex: Dyson, Apple, B&O, Jura). Dacă e ieftin sau random, răspunde {"reject": true}.
-            2. Dacă e ok, returnează JSON folosind framework-ul LUXURY COPYWRITING:
+            Produs Temu: "${rawData.title}".
+            Ești curator pentru AZISUNT.SHOP.
+            1. Verifică dacă e produs estetic/viral. Dacă e industrial/junk, răspunde {"reject": true}.
+            2. Returnează JSON:
             {
-              "name": "Nume Minimalist (max 3 cuvinte)",
-              "description": "O descriere care EVITĂ limbajul tehnic plictisitor. Folosește 'The Quiet Luxury' tone. Începe cu un beneficiu emoțional. (Min 250 caractere)",
-              "marketing": {
-                "hook": "Un hook viral de 5 cuvinte",
-                "story": "Povestea produsului în 2 fraze"
-              },
-              "features": [
-                "Beneficiu exclusiv 1",
-                "Beneficiu exclusiv 2",
-                "Beneficiu exclusiv 3"
-              ],
-              "badge": "LIMITED EDITION / EXECUTIVE CHOICE / SANCTUARY PICK",
+              "name": "Nume Premium",
+              "description": "Descriere",
+              "features": ["3 features"],
+              "badge": "TRENDING / VIRAL",
               "category": "sanctuary/executive/voyager/athlete"
             }
-            IMPORTAT: Scrie în limba ROMÂNĂ, ton rafinat, elitist.
         `;
         const result = await model.generateContent(aiPrompt);
         const aiResponse = JSON.parse(result.response.text().replace(/```json|```/g, '').trim());
 
         if (aiResponse.reject) {
-            console.log("   🚫 Respins (Not Quiet Luxury).");
+            console.log("   🚫 Respins.");
             return;
         }
 
@@ -120,12 +98,14 @@ async function importEmag(emagUrl) {
         if (!fs.existsSync(productsDir)) fs.mkdirSync(productsDir, { recursive: true });
 
         for (let i = 0; i < rawData.imgs.length; i++) {
-            const imageName = `emag-${Date.now()}-${i}.jpg`;
+            const imageName = `temu-${Date.now()}-${i}.jpg`;
             try {
                 await downloadImage(rawData.imgs[i], path.join(productsDir, imageName));
                 localImages.push(`/products/${imageName}`);
             } catch (e) {}
         }
+
+        if (localImages.length === 0) throw new Error("Nu am putut descărca imagini.");
 
         // Insert into Supabase
         const { data: productData, error: productError } = await supabase
@@ -133,15 +113,14 @@ async function importEmag(emagUrl) {
             .upsert({
                 slug: aiResponse.name.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, ''),
                 name: aiResponse.name,
-                price: parseInt(rawData.price) / 100,
-                compare_price: (parseInt(rawData.price) / 100) * 1.3,
-                category: aiResponse.category || "executive",
+                price: parseInt(rawData.price) || 50,
+                compare_price: (parseInt(rawData.price) || 50) * 2.5,
+                category: aiResponse.category || "lifestyle",
                 description: aiResponse.description,
                 features: aiResponse.features,
                 is_viral: false,
-                badge: aiResponse.badge || "EXCLUSIVE",
-                affiliate_url: `https://l.profitshare.ro/l/15748651?redirect=${encodeURIComponent(emagUrl)}`,
-                // marketing column might be missing, omitting for safety or try-catch
+                badge: aiResponse.badge || "VIRAL DISCOVERY",
+                affiliate_url: temuUrl
             }, { onConflict: 'slug' })
             .select()
             .single();
@@ -162,8 +141,7 @@ async function importEmag(emagUrl) {
             }));
             
             await supabase.from('product_images').delete().eq('product_id', productId);
-            const { error: imageError } = await supabase.from('product_images').insert(imagesToInsert);
-            if (imageError) console.error(`Image Insert Error: ${imageError.message}`);
+            await supabase.from('product_images').insert(imagesToInsert);
 
             await supabase.from('products').update({ images: localImages }).eq('id', productId);
         }
@@ -176,4 +154,4 @@ async function importEmag(emagUrl) {
 }
 
 const url = process.argv[2];
-if (url) importEmag(url);
+if (url) importTemu(url);

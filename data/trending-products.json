@@ -1,251 +1,5 @@
 [
   {
-    "id": "auto-1777121706726",
-    "slug": "colectia-epifanie",
-    "name": "Colecția Epifanie",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "Descoperiți Colecția Epifanie – o selecție curatorială de obiecte ce transcend așteptările. Fiecare piesă este o revelație a valorii și a esteticii, îmbinând accesibilitatea cu un rafinament neașteptat. Permiteți-vă să fiți surprins de frumusețea ascunsă și inovația ingenioasă, transformăm fiecare achiziție într-un moment de pură încântare. Experiența shopping-ului de lux inteligent, redefinită.",
-    "features": [
-      "Descoperiri Curatoriale",
-      "Valoare Redefinită",
-      "Eleganță Accesibilă"
-    ],
-    "images": [
-      "/products/ai-1777121706722.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-portable-electric-fruit-juicer-usb-rechargeable-mini-smoothie-blender-for-kitchen-office-travel-g-601099513361427.html",
-    "isViral": true,
-    "badge": "AI CURATED"
-  },
-  {
-    "id": "auto-1777122070853",
-    "slug": "arhetipul-rafinat",
-    "name": "Arhetipul Rafinat",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "Descoperiți Arhetipul Rafinat, o expresie sublimă a designului contemporan, unde minimalismul întâlnește funcționalitatea impecabilă. Fiecare piesă este o dovadă a măiestriei artizanale, creată din materiale de cea mai înaltă calitate, alese pentru durabilitatea și estetica lor superioară. O fuziune armonioasă între inovație și tradiție, acest obiect redefineste conceptul de lux accesibil, aducând un suflu de eleganță discretă în orice spațiu. Ideal pentru colecționari și pentru cei ce apreciază frumusețea atemporală și sustenabilitatea.",
-    "features": [
-      "Design minimalist atemporal, adaptabil oricărui interior de lux.",
-      "Confecționat manual din materiale premium, cu o atenție meticulosa la detalii și finisaje impecabile.",
-      "Durabilitate excepțională și performanță superioară, garantând o investiție pe termen lung."
-    ],
-    "images": [
-      "/products/ai-1777122070847.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-manual-vegetable-cutter-multifunctional-kitchen-slicer-with-4-interchangeable-blades-for-shredding-slicing-and-grating-potatoes-carrots-and-vegetables-g-601099512395350.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Ai văzut asta la Temu? Gândește-te din nou.",
-      "script": "Vizual: (0-3s) Detaliu macro, close-up pe textură, finisaj impecabil. Voce calmă, sofisticată: \"Crezi că știi luxul?\" (3-7s) Obiectul elegant, într-un spațiu minimalist, cu lumini ambientale calde. Voce: \"Ce-ar fi dacă eleganța ar fi o descoperire, nu o etichetă?\" (7-12s) O mână cu manichiură impecabilă atinge delicat suprafața. Voce: \"Arhetipul Rafinat. Reimaginați-vă așteptările.\" (12-15s) Zoom out pe obiect, aranjat artistic, logo subtil și adresă website. Voce: \"Exclusiv acum.\"",
-      "hashtags": [
-        "#LuxReinventat",
-        "#DesignMinimalist"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124660140",
-    "slug": "eclat-nocturn",
-    "name": "Eclat Nocturn",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "voyager",
-    "description": "Într-o lume a agitației cotidiene, *Eclat Nocturn* transcendă simpla funcționalitate, transformând orice spațiu într-un sanctuar personal de rafinament și liniște. Nu este doar o sursă de lumină, ci o declarație subtilă de stil, un punct focal discret ce captează esența eleganței atemporale. Prin designul său sculptural și lumina sa ambientală, *Eclat Nocturn* elevează atmosfera, invitând la introspecție și relaxare. Vă îmbunătățește viața prin cultivarea unui mediu propice bunăstării, unde fiecare moment devine o experiență estetică și senzorială, departe de zgomotul lumii, aproape de armonia interioară. Este alegerea firească pentru cei ce prețuiesc frumusețea discretă și confortul suprem, aducând o notă de exclusivitate fiecărui detaliu al căminului.",
-    "features": [
-      "Armonie Vizuală Impecabilă: Integrează-se fără efort în orice decor, de la minimalist la clasic, adăugând o notă de eleganță sofisticată fără a suprasolicita estetica existentă.",
-      "Atmosferă Serenă și Relaxantă: Emite o lumină caldă, difuză, perfectă pentru a crea un ambient propice relaxării, meditației sau conversațiilor intime, transformând fiecare seară într-un răgaz bine meritat.",
-      "Statement de Stil Discret: Oferă un detaliu distinctiv care vorbește despre gustul rafinat al posesorului, o piesă ce subliniază aprecierea pentru designul de calitate și frumusețea subestimată."
-    ],
-    "images": [
-      "/products/ai-1777124660133.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-transparent-led-note-board-with-pen-usb-powered-night-light-rewritable-message-board-g-601099512395350.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Secretul unui cămin care respiră rafinament.",
-      "script": "[0-2s] Text on screen, elegant font: \"Secretul unui cămin care respiră rafinament.\"\n[0-3s] Close-up, slow pan over the 'Eclat Nocturn' product, unlit, showcasing its brushed brass and frosted glass materials. Soft, ambient sound.\n[3-6s] An elegant hand (minimalist jewelry) gently touches the product, activating its warm glow. The light creates subtle reflections on the marble surface.\n[6-10s] Wide shot of a corner of a minimalist, 'Quiet Luxury' living room at dusk. The 'Eclat Nocturn' is a subtle focal point, casting a serene glow. Gentle bokeh in the background. Text overlay: \"Elevați fiecare seară.\"\n[10-13s] Another close-up on the product, emphasizing the soft, inviting light. Text overlay: \"Descoperiți Eclat Nocturn.\"\n[13-15s] Final product shot with the soft light, accompanied by the text: \"Armonie. Stil. Atemporal.\"\nAudio: Very soft, ambient classical piano piece or subtle nature sounds (e.g., distant fireplace crackle). No voiceover.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#QuietLuxury",
-        "#HomeDecor",
-        "#DesignInterior",
-        "#AmbientLuminos",
-        "#RefinedLiving",
-        "#EclatNocturn"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124694552",
-    "slug": "aura-serena",
-    "name": "Aura Serenă",
-    "price": 38,
-    "comparePrice": 114,
-    "category": "voyager",
-    "description": "În lumea rafinamentului discret, Aura Serenă nu este doar un obiect, ci o declarație. Concepută pentru a transcende funcționalitatea, această piesă de artă minimalistă transformă orice spațiu într-un sanctuar personal de calm și frumusețe. Cum vă îmbunătățește viața? Prin infuzarea fiecărui moment cu o prezență luminoasă, adaptabilă, și o aromă subtilă, dar profundă, care armonizează simțurile și elevează starea de spirit. Este un antidot vizual și olfactiv la agitația cotidiană, promovând o relaxare profundă și o concentrare sporită. Aura Serenă nu este doar un detaliu, ci investiția dumneavoastră într-un stil de viață unde eleganța, bunăstarea și funcționalitatea coexistă într-o simfonie perfectă, fără efort, fără ostentație.",
-    "features": [
-      "Experiență multisenzorială rafinată: Lumină ambientală personalizabilă și aromaterapie subtilă pentru echilibru interior.",
-      "Design atemporal 'Quiet Luxury': Siluetă minimalistă și materiale premium (ceramică mată, aluminiu periat) ce se integrează perfect în estetica oricărei locuințe sofisticate.",
-      "Promovarea bunăstării conștiente: Contribuie la reducerea stresului, îmbunătățirea calității somnului și crearea unei atmosfere propice meditației sau muncii concentrate."
-    ],
-    "images": [
-      "/products/ai-1777124694547.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-magnetic-suction-lamp-stepless-dimming-rechargeable-reading-lamp-for-dormitory-desk-wardrobe-g-601099513361427.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Rafinamentul nu strigă. El șoptește.",
-      "script": "Visual: (0-2s) Close-up cinematic pe textura mată a produsului Aura Serenă, apoi pe o lumină caldă, subtilă, pulsând ușor. (2-6s) O mână elegantă atinge delicat suprafața, apoi ajustează subtil lumina. (6-12s) Camera se retrage lent, dezvăluind o persoană citind o carte lângă produs, cu o expresie calmă. (12-15s) Revenire pe produs, cu un logo minimalist 'Aura Serenă' care apare discret.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#QuietLuxury",
-        "#AuraSerena",
-        "#EsteticăMinimalistă",
-        "#HomeSanctuary"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124728155",
-    "slug": "armonia-esentiala",
-    "name": "Armonia Esențială",
-    "price": 25,
-    "comparePrice": 75,
-    "category": "sanctuary",
-    "description": "Descoperiți *Armonia Esențială*, o piesă curatorială ce redefinește estetica utilității. Nu este doar un instrument de organizare, ci un element de design minimalist conceput pentru a aduce claritate și liniște în spațiul dumneavoastră vital. Într-o eră a supraîncărcării vizuale, *Armonia Esențială* propune o întoarcere la simplitatea rafinată, unde fiecare linie servește unui scop și fiecare material evocă o calitate atemporală. Cum vă îmbunătățește viața? Prin eliminarea haosului discret și înlocuirea lui cu o ordine fluidă, permițându-vă să vă concentrați pe ceea ce contează cu adevărat. Este expresia pură a luxului silențios, o investiție în confortul mental și estetic al căminului dumneavoastră modern.",
-    "features": [
-      "Sinergie Estetică și Funcțională: Un design sculptural care optimizează spațiul fără a compromite eleganța vizuală a interiorului.",
-      "Materiale Premium Sustenabile: Selecție riguroasă de finisaje tactile și durabile, create pentru a rezista testului timpului și tendințelor efemere.",
-      "Claritate Spațială Redefinită: Promovează un stil de viață ordonat și calm, transformând rutina zilnică într-o experiență de locuire superioară."
-    ],
-    "images": [
-      "/products/ai-1777124728149.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-transparent-led-note-board-with-pen-usb-powered-night-light-rewritable-message-board-g-601099512395350.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Ordinea este noua formă de libertate.",
-      "script": "Vizual: (0-3s) Montaj rapid, dar fluid, cu spații dezordonate care devin instantaneu calme și organizate prin prezența produsului. (3-8s) Detalii macro pe îmbinările perfecte și textura materialului. (8-12s) O persoană relaxată savurând o cafea într-un mediu impecabil. (12-15s) Text final: Armonia Esențială. Mai puțin, dar mai bine.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#Minimalism",
-        "#OrganizareDeLux",
-        "#QuietLuxuryHome"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124762118",
-    "slug": "reflexie-serena",
-    "name": "Reflexie Serenă",
-    "price": 65,
-    "comparePrice": 195,
-    "category": "voyager",
-    "description": "Descoperiți *Reflexie Serenă*, o piesă de o eleganță discretă care transformă ritualul îngrijirii vestimentare într-un moment de pură contemplare. Conceput pentru călătorul modern și estetul de acasă, acest obiect nu doar netezește țesăturile, ci și starea de spirit, oferind o soluție impecabilă fără efortul aparatelor voluminoase. *Reflexie Serenă* este expresia funcționalității elevate la rang de artă, un companion silențios care vă asigură o prezență impecabilă în orice context. Vă îmbunătățește viața prin simplitatea sa sofisticată, eliminând stresul cutelor nedorite și înlocuindu-l cu siguranța unei imagini perfecte, păstrând în același timp o estetică minimalistă care onorează spațiul dumneavoastră.",
-    "features": [
-      "Eficiență Impecabilă în Format Compact: Putere de netezire superioară într-un design sculptural, ideal pentru un stil de viață dinamic și rafinat.",
-      "Protecție Delicată a Fibrelor: Tehnologie avansată care onorează materialele prețioase, prelungind viața garderobei dumneavoastră curatoriate.",
-      "Estetică Minimalistă Atemporală: Un obiect care nu trebuie ascuns, integrându-se armonios în decorul oricărui dressing sau bagaj de lux."
-    ],
-    "images": [
-      "/products/ai-1777124762113.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-mini-portable-clothes-steamer-handheld-garment-steamer-for-travel-home-g-601099513000123.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Impecabil, oriunde te-ai afla.",
-      "script": "Visual: (0-3s) Un bagaj de lux, minimalist, se deschide pentru a dezvălui Reflexie Serenă. (3-8s) Abur fin, aproape invizibil, netezind instantaneu o cămașă din in fin. (8-12s) Produsul așezat pe o noptieră de hotel de lux. (12-15s) Voce caldă: Reflexie Serenă. Eleganța în mișcare.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#TravelLuxury",
-        "#MinimalistStyle",
-        "#QuietLuxuryTravel"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124796472",
-    "slug": "eclat-lumina",
-    "name": "Eclat Lumină",
-    "price": 42,
-    "comparePrice": 126,
-    "category": "sanctuary",
-    "description": "Descoperiți *Eclat Lumină*, o fuziune sublimă între tehnologie și estetică, creată pentru a onora cel mai prețios element al vieții: hidratarea conștientă. Nu este doar un recipient, ci un instrument de precizie care vă conectează cu nevoile fundamentale ale corpului dumneavoastră, într-un mod de o eleganță discretă. Cu un design minimalist și o interfață intuitivă, *Eclat Lumină* vă oferă controlul absolut asupra temperaturii ideale, transformând fiecare înghițitură într-o experiență senzorială elevată. Vă îmbunătățește viața prin promovarea unui stil de viață echilibrat și rafinat, asigurându-vă că prospețimea și calitatea sunt mereu la îndemână, totul ambalat într-o siluetă sofisticată ce reflectă prețuirea dumneavoastră pentru detaliu și bunăstare.",
-    "features": [
-      "Control Termic de Înaltă Precizie: Senzor inteligent integrat pentru o monitorizare discretă și instantanee a temperaturii perfecte.",
-      "Izolație Avansată și Estetică Pură: Menține puritatea și temperatura băuturii timp îndelungat, protejată de un strat de oțel inoxidabil premium cu finisaj mat.",
-      "Rafinament în Mișcare: O siluetă ergonomică și atemporală care se integrează natural în contextul biroului modern sau al sesiunilor de wellness de elită."
-    ],
-    "images": [
-      "/products/ai-1777124796467.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-smart-temperature-display-water-bottle-stainless-steel-vacuum-flask-g-601099514000456.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Hidratarea, ridicată la rang de artă.",
-      "script": "Vizual: (0-3s) O picătură de apă prelingându-se pe suprafața mată a Eclat Lumină. (3-8s) Cifrele digitale aprinzându-se discret sub atingere. (8-12s) Produsul lângă un covoraș de yoga sau un laptop minimalist. (12-15s) Eclat Lumină. Esența vieții, definită.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#WellnessDeLux",
-        "#SmartHydration",
-        "#QuietLuxuryLife"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777124834407",
-    "slug": "aura-esentiala",
-    "name": "Aura Esențială",
-    "price": 85,
-    "comparePrice": 255,
-    "category": "athlete",
-    "description": "Descoperiți *Aura Esențială*, podul invizibil între gândire și exprimare digitală. Acest instrument de o precizie sculpturală a fost conceput pentru a vă elibera creativitatea de constrângerile spațiului și ale cablurilor, oferind o experiență tactilă superioară într-o formă surprinzător de compactă. *Aura Esențială* nu este doar un accesoriu tech, ci o extensie a stilului dumneavoastră de viață sofisticat, unde mobilitatea întâlnește performanța fără compromisuri. Vă îmbunătățește viața prin fluiditatea pe care o aduce fluxului dumneavoastră de lucru, permițându-vă să transformați orice loc într-un birou de elită, păstrând în același timp o estetică minimalistă care inspiră claritate și profesionalism.",
-    "features": [
-      "Libertate Creativă Pliabilă: Design inovator care se integrează discret în orice geantă sau portofoliu de lux, gata să vă urmeze inspirația.",
-      "Conectivitate Fluidă și Silențioasă: Tehnologie Bluetooth multi-device pentru o tranziție fără efort între dispozitive, cu taste ce onorează liniștea spațiului de lucru.",
-      "Estetică Tech Elevată: Finisaje premium și o textură tactilă care transformă interacțiunea digitală într-o plăcere cotidiană."
-    ],
-    "images": [
-      "/products/ai-1777124834402.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-foldable-bluetooth-keyboard-portable-wireless-keyboard-for-tablet-phone-g-601099515000789.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Biroul tău, pretutindeni. Fără compromisuri.",
-      "script": "Vizual: (0-3s) Aura Esențială se desface lin ca o carcasă de ochelari premium. (3-8s) Conectare instantanee la o tabletă așezată pe o masă de cafenea din lemn masiv. (8-12s) Tastele fiind apăsate într-o liniște deplină. (12-15s) Aura Esențială. Puterea cuvântului, eliberată.",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#TechMinimalist",
-        "#NomadDeLux",
-        "#QuietLuxuryTech"
-      ]
-    }
-  },
-  {
     "id": "emag-1777125227711",
     "slug": "sanctuarul-sonor",
     "name": "Sanctuarul Sonor",
@@ -262,9 +16,9 @@
       "/products/emag-1777125227706.png"
     ],
     "inStock": true,
-    "affiliateUrl": "https://l.profitshare.ro/l/15748683?redirect=https%3A%2F%2Fwww.emag.ro%2Fcasti-over-ear-bowers-wilkins-px8-s2-wireless-bluetooth-microfon-anc-autonomie-30-ore-onyx-black-fp45365%2Fpd%2FDYLSG43BM%2F",
-    "isViral": true,
-    "badge": "DISCOVERY OF THE WEEK",
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fcasti-over-ear-bowers-wilkins-px8-s2-wireless-bluetooth-microfon-anc-autonomie-30-ore-onyx-black-fp45365%2Fpd%2FDYLSG43BM%2F",
+    "isViral": false,
+    "badge": "LIMITED EDITION",
     "marketing": {
       "hook": "Nu e doar muzică. E o evadare.",
       "script": [
@@ -302,153 +56,6 @@
     }
   },
   {
-    "id": "auto-1777125884944",
-    "slug": "eterul-aromatic",
-    "name": "Eterul Aromatic",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "voyager",
-    "description": "Eterul Aromatic redefinește experiența simțurilor, transformând fiecare încăpere într-un refugiu personal de rafinament și echilibru. Nu este doar un obiect de decor, ci un arhitect subtil al stării de bine, ce infuzează aerul cu esențe delicate și învăluie spațiul într-o lumină blândă, menită să calmeze și să inspire. Prin designul său minimalist și funcționalitatea sa silențioasă, Eterul Aromatic răspunde dorinței de a trăi într-un mediu armonios, unde fiecare detaliu contribuie la o existență elevată. Vă îmbunătățește viața oferind un ritual zilnic de deconectare și regenerare, transformând momentele obișnuite în experiențe extraordinare de calm și frumusețe.",
-    "features": [
-      "Elevarea Esteticii Căminului: Integrează un element de design atemporal și minimalist, contribuind la crearea unei atmosfere de 'Quiet Luxury' fără efort.",
-      "Armonie Olfactivă și Senzorială: Creează o ambianță serenă prin difuzia silențioasă a aromelor esențiale și a unei lumini ambientale delicate, promovând relaxarea și claritatea mentală.",
-      "Ritual de Regenerare Personală: Oferă un moment zilnic de deconectare și introspecție, transformând spațiul într-un sanctuar privat de calm și echilibru."
-    ],
-    "images": [
-      "/products/ai-1777125884936.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-magnetic-levitation-moon-lamp-floating-and-spinning-in-the-air-g-601099516000123.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Nu-ți spun să-ți schimbi viața...",
-      "script": "Vizual: (0-2s) Mâini delicate așează Eterul Aromatic pe o suprafață de marmură albă. Muzică ambientală calmă, elegantă începe.\nText Overlay: Nu-ți spun să-ți schimbi viața...\n\nVizual: (2-5s) Close-up cu aburul subtil și lumina caldă ce emană din difuzor. Zoom lent, elegant.\nVoiceover (ton feminin, sofisticat, calm): ...dar ce-ar fi dacă fiecare zi ar începe cu un moment de seninătate?\n\nVizual: (5-8s) O persoană (îmbrăcată minimalist, 'old money style') savurează o ceașcă de ceai, citind o carte într-un colț luminos al camerei. Eterul Aromatic este subtil în fundal.\nVoiceover: Eterul Aromatic transformă spațiul tău într-un refugiu.\n\nVizual: (8-12s) Tranziție lină, time-lapse scurt cu schimbarea subtilă a luminii în cameră de la zi la seară, lumina difuzorului devenind mai proeminentă.\nVoiceover: O infuzie discretă de calm, un ritual de reconectare.\n\nVizual: (12-14s) Shot elegant cu numele produsului, \"Eterul Aromatic\", pe ecran.\nText Overlay: Eterul Aromatic.\n\nVizual: (14-15s) Un ultim shot cu produsul, poate cu o mișcare de panning. Call to action subtil.\nText Overlay: Descoperă rafinamentul.",
-      "hashtags": [
-        "#LuxDiscret",
-        "#EsentaRafinamentului"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777125920353",
-    "slug": "eclat-nocturn",
-    "name": "Eclat Nocturn",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "Eclat Nocturn transcende funcționalitatea banală, devenind o declarație subtilă de rafinament în spațiul dumneavoastră. Conceput pentru a îmbogăți atmosfera oricărei încăperi, acest obiect de artă luminoasă difuzează o lumină caldă, personalizabilă, ce modelează ambientul și induce o stare de bine. Nu este doar o sursă de lumină, ci un element sculptural ce invită la introspecție, la conversații profunde și la savurarea frumuseții discrete a momentului. Prin integrarea sa armonioasă, Eclat Nocturn vă îmbunătățește viața, transformând cotidianul într-o experiență elevată de liniște și estetică.",
-    "features": [
-      "Ambianță Adaptabilă: Creați instantaneu atmosfera dorită, de la o lumină stimulativă pentru lectură la o strălucire difuză, perfectă pentru relaxare și contemplare.",
-      "Design Sculptural: Integrați un element de artă minimalistă, ce complimentează și elevează estetica oricărui interior, fără a copleși vizual, ci adăugând o notă de rafinament discret.",
-      "Stare de Bine Amplificată: Beneficiați de o calitate superioară a luminii care reduce oboseala ochilor și contribuie la o senzație generală de calm, concentrare și confort mental."
-    ],
-    "images": [
-      "/products/ai-1777125920347.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-smart-bird-feeder-with-camera-auto-capture-bird-videos-g-601099517000456.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Nu doar o lumină. O prezență.",
-      "script": [
-        {
-          "time": "0-3s",
-          "visual": "Cadru lent, panoramic, al unei încăperi minimalist-elegante, cu lumină naturală blândă.",
-          "voiceover": "În fiecare spațiu, există o poveste. Un sentiment."
-        },
-        {
-          "time": "3-7s",
-          "visual": "Prim-plan rafinat pe 'Eclat Nocturn', lumina sa caldă pulsând subtil.",
-          "voiceover": "Eclat Nocturn nu iluminează. El transformă."
-        },
-        {
-          "time": "7-12s",
-          "visual": "O mână elegantă (fără bijuterii) atinge cu delicatețe baza produsului, intensitatea luminii se ajustează fluid. O persoană (siluetă discretă) citește o carte clasică sau savurează un ceai, învăluită în lumina blândă.",
-          "voiceover": "Creează-ți refugiul. Redescoperă liniștea."
-        },
-        {
-          "time": "12-15s",
-          "visual": "Cadru final pe produs, cu un logo discret sau un text elegant pe ecran: 'Eclat Nocturn. Eleganță discretă.'",
-          "voiceover": "Eclat Nocturn. Armonia luminii."
-        }
-      ],
-      "hashtags": [
-        "#QuietLuxury",
-        "#DesignInterior",
-        "#HomeDecor",
-        "#Estetica",
-        "#IluminatDeLux",
-        "#Minimalism",
-        "#OldMoneyStyle",
-        "#LuxuryLiving",
-        "#ArtefactDesign",
-        "#EclatNocturn"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777125954920",
-    "slug": "aura-calda",
-    "name": "Aura Caldă",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "Într-o lume a agitației constante, găsirea unui refugiu personal devine o necesitate. Aura Caldă transcende rolul unei simple surse de lumină, transformându-se într-o promisiune a serenității și un partener discret al momentelor de introspecție. Cu un design minimalist și o estetică impecabilă, este sculptată pentru a completa spațiile rafinate. Lumina sa ambientală, caldă și ajustabilă, creează o atmosferă propice relaxării profunde, clarității mentale și bunăstării emoționale. Fie că meditați, citiți sau pur și simplu savurați liniștea, Aura Caldă nu doar luminează, ci și îmbogățește fiecare clipă, elevând standardele de estetică și confort ale locuinței dumneavoastră. Descoperiți luxul subtil al unui mediu conștient.",
-    "features": [
-      "Ambianță Serenă Personalizată: Creează o atmosferă de calm absolut, adaptabilă oricărei dispoziții sau activități, transformând orice încăpere într-un sanctuar personal de liniște.",
-      "Design Minimalist de Excepție: O piesă de artă funcțională, cu linii pure și materiale premium, ce se integrează armonios în decorul de lux, adăugând o notă de rafinament discret.",
-      "Contribuție Subtilă la Bunăstare: Prin lumina sa armonioasă și prezența sa discretă, susține un echilibru emoțional, favorizând relaxarea, concentrarea și un somn odihnitor."
-    ],
-    "images": [
-      "/products/ai-1777125954914.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-electric-spin-scrubber-cordless-cleaning-brush-with-7-replaceable-heads-g-601099518000789.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Într-o lume zgomotoasă, găsește-ți liniștea.",
-      "script": [
-        {
-          "time": "0-2s",
-          "visual": "Mână elegantă plasează delicat Aura Caldă (sferică/cilindrică, lumina stinsă) pe o masă din marmură albă. Lumina naturală caldă inundă cadrul.",
-          "text_overlay": "Găsește-ți liniștea."
-        },
-        {
-          "time": "2-5s",
-          "visual": "Aura Caldă se aprinde lent, emanând o lumină caldă, aurie, difuză. Camera se mișcă lent, arătând reflexia luminii pe marmură, creând un joc subtil de umbre.",
-          "text_overlay": "Un design ce respiră."
-        },
-        {
-          "time": "5-9s",
-          "visual": "Panoramare lentă într-o încăpere 'quiet luxury' (fără dezordine, culori neutre, materiale naturale - lemn, in, mătase) unde Aura Caldă este punctul central, creând o ambianță serenă. Muzică ambientală calmă, discretă.",
-          "voice_over": null
-        },
-        {
-          "time": "9-13s",
-          "visual": "Close-up pe textura frosted glass/brushed metal a produsului, cu o tranziție spre o scenă de lectură sau meditație, unde Aura Caldă luminează discret. ",
-          "voice_over": "Nu este doar lumină. Este o stare. O prezență discretă ce îți transformă spațiul."
-        },
-        {
-          "time": "13-15s",
-          "visual": "Produsul în prim plan, cu logo-ul 'Aura Caldă' și o mână elegantă care reglează subtil intensitatea luminii. Fade out lent.",
-          "text_overlay": "Aura Caldă. Descoperă serenitatea."
-        }
-      ],
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#QuietLuxury",
-        "#HomeSanctuary",
-        "#AuraCaldă",
-        "#Wellness",
-        "#MinimalistDecor"
-      ]
-    }
-  },
-  {
     "id": "emag-1777126235947",
     "slug": "aura-sanatatii",
     "name": "Aura Sănătății",
@@ -462,12 +69,12 @@
       "Optimizare Holistă a Ritului Nocturn: Monitorizare continuă a ciclurilor de somn, oferind perspective detaliate pentru îmbunătățirea calității repausului și maximizarea regenerării fizice și mentale."
     ],
     "images": [
-      "/products/emag-1777126235942.png"
+      "https://sc02.alicdn.com/kf/A8fd466672d4d41dfa459d2ade125390eg.png"
     ],
     "inStock": true,
-    "affiliateUrl": "https://l.profitshare.ro/l/15748683?redirect=https%3A%2F%2Fwww.emag.ro%2Fbratara-inteligenta-huawei-band-9-black-textile-strap-55020cfv%2Fpd%2FDDK72YYBM%2F",
-    "isViral": true,
-    "badge": "DISCOVERY OF THE WEEK",
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fbratara-inteligenta-huawei-band-9-black-textile-strap-55020cfv%2Fpd%2FDDK72YYBM%2F",
+    "isViral": false,
+    "badge": "LIMITED EDITION",
     "marketing": {
       "hook": "Secretul stării tale de vârf.",
       "script": "(0-3s) VIDEO: Mână elegantă toarnă cafea artizanală, fără brățară. TEXT: Succesul nu e mereu vizibil.\n(3-6s) VIDEO: Mâna așează ceașca, dezvăluind discret Aura Sănătății la încheietură. TEXT: E ceea ce știi, despre tine.\n(6-10s) VIDEO: Tranziție rapidă: Persoană concentrată la birou, apoi o plimbare scurtă, meditativă, cu brățara vizibilă. TEXT: Optimizare continuă: somn, activitate, echilibru.\n(10-13s) VIDEO: Close-up pe brățara din textil, apoi mână arată un gest de înțelegere. TEXT: Inteligență silențioasă pentru viața ta de vârf.\n(13-15s) VIDEO: Persoana se ridică, pleacă încrezătoare. TEXT: Aura Sănătății. Link în bio."
@@ -487,213 +94,141 @@
       "Autonomie Senină: Proiectat pentru performanță neîntreruptă, eliberează spiritul de grija reîncărcărilor frecvente, asigurând o prezență constantă și fiabilă în dinamica zilei dumneavoastră."
     ],
     "images": [
-      "/products/emag-1777126284653.png"
+      "https://sc02.alicdn.com/kf/A70746e0c8af44bc2aa538f8ef148de0ap.png"
     ],
     "inStock": true,
-    "affiliateUrl": "https://l.profitshare.ro/l/15748683?redirect=https%3A%2F%2Fwww.emag.ro%2Fbratara-inteligenta-xiaomi-smart-band-8-graphite-black-bhr7165gl%2Fpd%2FD84999YBM%2F",
-    "isViral": true,
-    "badge": "DISCOVERY OF THE WEEK",
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fbratara-inteligenta-xiaomi-smart-band-8-graphite-black-bhr7165gl%2Fpd%2FD84999YBM%2F",
+    "isViral": false,
+    "badge": "LIMITED EDITION",
     "marketing": {
       "hook": "Prea mult zgomot, prea puțin control?",
       "script": "**[0-2s]** (VIDEO: Mână elegantă, manșetă de cămașă de mătase sau blazer discret, atinge rapid un telefon plin de notificări zgomotoase. Tranziție rapidă la încheietura mâinii, unde Impuls Nocturn este discret prezent.) (AUDIO: Zgomot de notificări multiple, apoi un 'whoosh' subtil.) \n**[2-5s]** (VIDEO: Text pe ecran: 'Zgomotul digital te copleșește?') (AUDIO: Muzică calmă, lo-fi hip-hop/jazz instrumental începe.) \n**[5-8s]** (VIDEO: Close-up pe Impuls Nocturn (Midnight Black), apoi se vede purtătorul, bine îmbrăcat, într-un birou minimalist cu elemente de Quiet Luxury.) (AUDIO: Muzică continuă, un 'ding' subtil la close-up-ul brățării.) \n**[8-11s]** (VIDEO: Text pe ecran: 'Adevărata eleganță e în discreție și control.') (AUDIO: Muzică intensificându-se ușor.) \n**[11-14s]** (VIDEO: Secvențe rapide (montaj): Personaj verificând discret ritmul cardiac la o sală de sport de lux / o notificare esențială pe brățară în timpul unei cine elegante, fără a deranja.) (AUDIO: Muzică continuă, cu un sunet ambient discret pentru fiecare scenă.) \n**[14-15s]** (VIDEO: Text pe ecran: 'Impuls Nocturn. Ritmul tău. Liniștit.' + Logo minimalist Impuls Nocturn / Slogan.) (AUDIO: Muzică se încheie cu o notă finală elegantă.)"
     }
   },
   {
-    "id": "auto-1777128003563",
-    "slug": "aura-esentiala",
-    "name": "Aura Esențială",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "În lumea agitată a prezentului, găsirea unui refugiu personal devine o necesitate, nu un lux. Aura Esențială transcende simpla funcționalitate de iluminat, transformându-se într-o invitație tăcută la echilibru și rafinament. Fiecare interacțiune cu Aura Esențială nu este doar o aprindere a luminii, ci o calibrare subtilă a spațiului dumneavoastră personal, infuzându-l cu o serenitate discretă și o eleganță atemporală. Elimină zgomotul vizual, filtrând lumina într-un mod care calmează simțurile și elevează starea de spirit, creând un sanctuar unde gândurile se așează, iar momentele de introspecție sunt prețuite. Este mai mult decât un obiect; este o promisiune a unei atmosfere cultivate, un accesoriu indispensabil pentru bunăstarea dumneavoastră discretă și un testament al aprecierii dumneavoastră pentru frumusețea esențială.",
-    "features": [
-      "Transformarea Ambientului: Creează instantaneu o atmosferă de calm și rafinament, ideală pentru relaxare sau concentrare.",
-      "Elevația Stării de Spirit: Lumina subtilă și caldă reduce stresul vizual și contribuie la o stare de bine generală, favorizând introspecția.",
-      "Estetică Minimalistă & Discretă: Designul său atemporal se integrează perfect în orice decor de lux, adăugând o notă de eleganță fără a domina spațiul."
-    ],
-    "images": [
-      "/products/ai-1777128003535.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-led-crystal-ball-night-light-3d-solar-system-moon-galaxy-crystal-ball-g-601099512395123.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Adevărata valoare nu strigă.",
-      "script": "[Sunet: Melodie ambientală, minimalistă, pian blând]\n0-2s: Close-up, panou lent peste o suprafață netedă, texturată (cașmir sau lemn lustruit).\n2-5s: Mână elegantă (fără bijuterii ostentative) atinge un comutator discret. Lumina din Aura Esențială se aprinde lent, umplând camera cu o nuanță caldă.\n5-9s: Panoramă lentă a unui colț de cameră minimalist, cu marmură și accente din lemn. Lumina subtilă a Aura Esențială creează un joc delicat de umbre și lumini.\n9-12s: Persoană citind o carte clasică, cu o ceașcă de ceai, în lumina caldă. Expresie de serenitate profundă.\n12-14s: Text pe ecran, minimalist: \"Aura Esențială. Armonie Discretă.\"\n14-15s: Logo discret al brandului sau doar produsul luminos.",
-      "hashtags": [
-        "#QuietLuxury",
-        "#AuraEsențială",
-        "#SanctuaryHome",
-        "#DiscretElegance",
-        "#Wellbeing",
-        "#LuxuryLiving",
-        "#DesignMinimalist",
-        "#OldMoneyAesthetic"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777128034487",
-    "slug": "esenta-luminis",
-    "name": "Esenta Luminis",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "Transformați-vă spațiul într-un refugiu de liniște și rafinament cu Esenta Luminis. Mai mult decât un simplu obiect decorativ, Esenta Luminis este o invitație la reconectare, o simfonie subtilă de lumină ambientală și parfumuri delicate, concepută pentru a eleva fiecare moment al zilei. Integrarea sa discretă în decorul minimalist al casei dumneavoastră subliniază o înțelegere profundă a frumuseții funcționale și a bunăstării autentice. Redescoperiți echilibrul interior, învăluit într-o atmosferă ce vorbește despre luxul neostentativ și o viață trăită cu intenție, îmbunătățindu-vă calitatea somnului și focusul mental prin simpla sa prezență elegantă.",
-    "features": [
-      "Refugiu Personal de Liniște: Creează o ambianță serenă, ideală pentru relaxare profundă și meditație, ajutându-vă să deconectați de stresul cotidian.",
-      "Estetică Minimalistă, Impact Maxim: Designul său atemporal și materialele premium îmbogățesc subtil orice interior, transformându-l într-o declarație de gust rafinat.",
-      "Bunăstare Intuitivă: Controlul simplu și funcțiile inteligente vă permit să personalizați atmosfera cu ușurință, adaptând-o perfect nevoilor și stării dumneavoastră de spirit."
-    ],
-    "images": [
-      "/products/ai-1777128034480.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-desktop-water-fountain-with-led-light-indoor-zen-relaxation-waterfall-g-601099513361789.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Un spațiu care îți oglindește sufletul.",
-      "script": "**(Muzică ambientală calmă, minimalistă, cu sunete subtile de natură în fundal)**\n\n**[0-3s]** Vizual: Close-up, slow pan peste suprafața texturată a 'Esenta Luminis', pe o masă de marmură. Lumina caldă a dimineții cade delicat.\n**Voce (feminină, caldă, sofisticată, ușor șoptită):** \"Un spațiu care îți oglindește sufletul...\"\n\n**[3-7s]** Vizual: O persoană elegantă, cu gusturi rafinate, savurează o ceașcă de ceai într-un living minimalist. 'Esenta Luminis' este subtil în fundal, emanând o strălucire discretă și o adiere fină de vapori.\n**Voce:** \"Nu e doar estetică, e o stare de bine. O adiere subtilă...\"\n\n**[7-12s]** Vizual: Detaliu al luminii calde și al vaporilor delicați ce se ridică din 'Esenta Luminis'. Mână elegantă ce atinge ușor dispozitivul, ajustând setările.\n**Voce:** \"...o lumină care te învăluie. Detaliile fac diferența, creând sanctuarul tău personal.\"\n\n**[12-15s]** Vizual: Text pe ecran: \"Esenta Luminis. Redefinește-ți Sanctuarul.\" Logo brand. Fade out.\n**Voce:** \"Esenta Luminis. Descoperă echilibrul.\" (Muzica se estompează lent)\n",
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#QuietLuxury",
-        "#HomeSanctuary",
-        "#WellnessJourney",
-        "#MinimalistDesign",
-        "#OldMoneyAesthetic",
-        "#EsentaLuminis"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777128068228",
-    "slug": "portalul-discret",
-    "name": "Portalul Discret",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "sanctuary",
-    "description": "În peisajul digital actual, timpul și securitatea sunt bunuri de neprețuit. Portalul Discret transcende simpla autentificare, transformând-o într-o experiență fluidă și intrinsec personală. Este promisiunea unui acces fără efort la universul tău curat, unde fiecare interacțiune este anticipată și optimizată. Nu mai este o barieră, ci o invitație rafinată către eficiență și intimitate digitală, eliberându-vă minute prețioase pentru ceea ce contează cu adevărat și asigurându-vă pacea minții într-un spațiu conceput exclusiv pentru dumneavoastră.",
-    "features": [
-      "Fluiditate Impecabilă: Acces instantaneu, fără fricțiuni, la serviciile și conținutul personalizat, transformând fiecare interacțiune într-o plăcere.",
-      "Experiență Personalizată, Intuitivă: Recunoaștere discretă care anticipează nevoile și preferințele, oferind o interfață și o experiență digitală adaptate perfect stilului dumneavoastră.",
-      "Securitate Silențioasă: Protecție robustă, de ultimă generație, operând invizibil în fundal, pentru a vă asigura o pace a minții absolută, fără a compromite eleganța sau viteza."
-    ],
-    "images": [
-      "/products/ai-1777128068223.png"
-    ],
-    "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-portable-mini-sewing-machine-handheld-electric-stitch-tool-for-home-travel-g-601099514000123.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Timpul tău este o artă. De ce să-l irosești?",
-      "script": [
-        "(0-2s) VISUAL: Close-up pe o mână elegantă (cu o bijuterie discretă) atingând o tabletă minimalistă, așezată pe marmură albă. Lumină caldă, dimineață.",
-        "VOICEOVER (Calm, sofisticat): \"În lumea ta, fluiditatea este esențială.\"",
-        "(2-6s) VISUAL: Ecranul tabletei se deblochează instantaneu, fără solicitări de parolă. Tranziție lină către o interfață personalizată, cu elemente de \"quiet luxury\" (ex: un itinerariu de călătorie bespoke, o colecție de artă digitală).",
-        "VOICEOVER: \"Nu un obstacol, ci o invitație.\"",
-        "(6-12s) VISUAL: Secvențe rapide (montaj) cu alte momente de \"acces discret\" (ex: un laptop se deschide direct pe un proiect important, un smart home hub anticipează nevoi – lumini, muzică). Totul fluid, fără efort vizibil.",
-        "VOICEOVER: \"Portalul Discret. Eleganța accesului. Refined by design.\"",
-        "(12-15s) VISUAL: Logo \"Portalul Discret\" minimalist, pe un fundal estetic."
-      ],
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#QuietLuxury",
-        "#DigitalRefinement",
-        "#EffortlessElegance",
-        "#TimeIsLuxury",
-        "#SanctuaryTech",
-        "#BespokeAccess"
-      ]
-    }
-  },
-  {
-    "id": "auto-1777128104426",
-    "slug": "veritas",
-    "name": "Veritas",
-    "price": 50,
-    "comparePrice": 150,
+    "id": "manual-2",
+    "slug": "airpods-max-silver",
+    "name": "AirPods Max Silver",
+    "price": 2799,
+    "comparePrice": 3200,
     "category": "executive",
-    "description": "În universul digital al exigențelor contemporane, fiecare secundă contează. Veritas transcende simpla autentificare, oferind o poartă către un ecosistem personalizat și sigur. Este mai mult decât un acces; este promisiunea unei experiențe fluide, unde identitatea dumneavoastră este recunoscută și protejată cu discreția supremă. Vă îmbunătățește viața prin eliminarea fricțiunii digitale, permițându-vă să navigați fără efort prin servicii exclusive, informații esențiale și conținut curat, transformând fiecare interacțiune într-un moment de rafinament și control absolut. Descoperiți libertatea de a vă concentra pe ceea ce contează cu adevărat, știind că prezența dumneavoastră digitală este într-un sanctuar de necontestat.",
+    "description": "Echilibrul perfect între sunetul de înaltă fidelitate și simplitatea magică a AirPods. O experiență de ascultare personalizată, îmbrăcată în aluminiu anodizat.",
     "features": [
-      "Acces Intuitiv și Instantaneu: Eliminați orice obstacol digital. O singură atingere vă deschide porțile către experiențe personalizate, economisind timp prețios.",
-      "Experiență Digitală Bespoke: De la prima interacțiune, Veritas vă recunoaște preferințele, curatând un flux de conținut și servicii perfect adaptat stilului dumneavoastră de viață exigent.",
-      "Securitate Inviolabilă și Discreție Absolută: Beneficiați de cele mai înalte standarde de protecție a datelor și a identității, asigurându-vă pacea interioară în fiecare interacțiune digitală."
+      "Anulare activă a zgomotului",
+      "Mod Transparență",
+      "Audio spațial cu urmărire dinamică"
     ],
     "images": [
-      "/products/ai-1777128104420.png"
+      "https://sc02.alicdn.com/kf/A1b7219c5f0e7451cbdf8aa215731ad3dp.png"
     ],
     "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-rechargeable-led-headlamp-super-bright-waterproof-headlight-for-camping-running-g-601099515000456.html",
-    "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Close-up of a hand reaching for a sleek tablet on a polished marble surface. Serene, warm lighting.",
-      "script": [
-        {
-          "time": "0-3s",
-          "visual": "Hand elegantly taps a tablet screen. Subtle, minimalist interface appears, displaying 'Veritas' or a clean login icon.",
-          "voiceover": "În lumea de azi, timpul este noul lux."
-        },
-        {
-          "time": "3-7s",
-          "visual": "The screen instantly transitions to a personalized, curated feed of luxury content (e.g., bespoke fashion, exclusive travel destinations, high-end art).",
-          "voiceover": "De ce să compromiți fluiditatea? Deblochează o experiență perfectă."
-        },
-        {
-          "time": "7-12s",
-          "visual": "Pan out slightly to reveal the user (tastefully dressed, relaxed) effortlessly browsing on the tablet, in a quiet luxury setting (e.g., modern armchair, minimalist decor). Soft, natural light bathes the scene.",
-          "voiceover": "Cu Veritas, accesul este rafinat. Securitatea, absolută. Fiecare interacțiune, elevată."
-        },
-        {
-          "time": "12-15s",
-          "visual": "'Veritas' logo or name appears elegantly on a clean, minimalist background.",
-          "voiceover": "Descoperă privilegiul unei conexiuni autentice."
-        }
-      ],
-      "hashtags": [
-        "#Lux",
-        "#Discovery",
-        "#Veritas",
-        "#QuietLuxury",
-        "#EffortlessLuxury",
-        "#DigitalElegance",
-        "#PremiumAccess",
-        "#OldMoneyAesthetic"
-      ]
-    }
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fcasti-apple-airpods-max-silver-mgyj3zm-a%2Fpd%2FD7V637MBM%2F",
+    "isViral": false,
+    "badge": "LIMITED EDITION"
   },
   {
-    "id": "auto-1777128139023",
-    "slug": "ritualul-de-acces",
-    "name": "Ritualul de Acces",
-    "price": 50,
-    "comparePrice": 150,
-    "category": "executive",
-    "description": "În lumea vitezei, timpul devine luxul suprem. Ritualul de Acces transcende simpla autentificare, transformând fiecare interacțiune digitală într-un act de fluiditate și siguranță. Este poarta discretă către o experiență personalizată, unde datele tale sunt sanctuar, iar fiecare click o confirmare a rafinamentului. Nu este doar un pas; este o promisiune de liniște, eficiență și exclusivitate, creând un spațiu digital în care timpul tău prețios este respectat și amplificat. Intră cu eleganță în lumea ta.",
+    "id": "manual-4",
+    "slug": "beosound-a1-mist",
+    "name": "B&O Beosound A1",
+    "price": 1299,
+    "comparePrice": 1500,
+    "category": "voyager",
+    "description": "Sunetul Bang & Olufsen într-o formă portabilă ultra-rafinată. Rezistența la apă și designul semnat Cecilie Manz fac din A1 partenerul ideal de călătorie.",
     "features": [
-      "Fluiditate Esențială: Elimină fricțiunea și așteptarea, transformând accesul într-o experiență lină și intuitivă, perfect integrată în ritmul tău.",
-      "Siguranță Discretă: Protejează cu rigoare datele tale prețioase, oferind o liniște absolută, fără a compromite eleganța sau ușurința utilizării.",
-      "Experiență Curată: Permite o călătorie digitală profund personalizată, unde preferințele tale sunt recunoscute și anticipate, creând un univers online adaptat exclusiv ție."
+      "Sunet 360 grade True360",
+      "Până la 18 ore autonomie",
+      "Rezistență IP67"
     ],
     "images": [
-      "/products/ai-1777128139018.png"
+      "https://sc02.alicdn.com/kf/A17f2017df84a4ac89628b0f9495980b3T.png"
     ],
     "inStock": true,
-    "affiliateUrl": "https://www.temu.com/ro/1pc-wooden-digital-alarm-clock-with-wireless-charging-led-display-g-601099516000789.html",
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fboxa-portabila-bang-olufsen-beosound-a1-2nd-gen-grey-mist-1734001%2Fpd%2FDRT0S3MBM%2F",
+    "isViral": false,
+    "badge": "LIMITED EDITION"
+  },
+  {
+    "id": "manual-dyson",
+    "slug": "dyson-purifier-cool-gen1",
+    "name": "Dyson Purifier Cool",
+    "price": 1899,
+    "comparePrice": 2200,
+    "category": "sanctuary",
+    "description": "Purificarea aerului la standarde de elită. Dyson Purifier Cool Gen1 combină designul sculptural cu o tehnologie de filtrare HEPA avansată.",
+    "features": [
+      "Filtrare HEPA 13",
+      "Senzori de monitorizare live",
+      "Mod de noapte ultra-silențios"
+    ],
+    "images": [
+      "https://sc02.alicdn.com/kf/Aefb4577a6d07450288417cc6413affd0b.png"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fpurificator-de-aer-si-ventilator-dyson-purifier-cool-gen1-tp10-white-454792-01%2Fpd%2FD7N8Z7MBM%2F",
+    "isViral": false,
+    "badge": "BESTSELLER"
+  },
+  {
+    "id": "manual-sony-xm5",
+    "slug": "sony-wh-1000xm5-black",
+    "name": "Sony WH-1000XM5",
+    "price": 1499,
+    "comparePrice": 1800,
+    "category": "executive",
+    "description": "Liniștea absolută într-un design rafinat. Sony WH-1000XM5 redefinește experiența audio prin cea mai avansată tehnologie de anulare a zgomotului.",
+    "features": [
+      "Noise Cancelling de top",
+      "8 microfoane integrate",
+      "Autonomie 30 de ore"
+    ],
+    "images": [
+      "https://sc02.alicdn.com/kf/A5d2b17848e254ca693a83e82326aea7ad.png"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fcasti-sony-wh-1000xm5b-over-ear-wireless-bluetooth-noise-cancelling-mic-autonomie-30-ore-negru-wh1000xm5b-ce7%2Fpd%2FDG219XMBM%2F",
+    "isViral": false,
+    "badge": "EXECUTIVE CHOICE"
+  },
+  {
+    "id": "manual-nespresso-pop",
+    "slug": "nespresso-vertuo-pop-white",
+    "name": "Nespresso Vertuo Pop",
+    "price": 499,
+    "comparePrice": 650,
+    "category": "sanctuary",
+    "description": "Ritualul dimineții, ridicat la rang de artă. Vertuo Pop aduce sistemul revoluționar Centrifusion intr-un format compact.",
+    "features": [
+      "Tehnologie Centrifusion",
+      "Recunoaștere automată capsule",
+      "Design compact"
+    ],
+    "images": [
+      "https://sc02.alicdn.com/kf/A8b1fdb8d9c094b629a7ceff946e73cb1C.png"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fespressor-cu-capsule-nespresso-vertuo-pop-by-krups-1260-w-0-6-l-coconut-white-xn920110%2Fpd%2FD7T0S3MBM%2F",
     "isViral": true,
-    "badge": "AI CURATED",
-    "marketing": {
-      "hook": "Intră în universul tău, fără efort.",
-      "script": "[Scenă 1: (0-4s)] Close-up pe o mână elegantă atingând un ecran de tabletă minimalist. Ecranul se iluminează subtil, afișând un design curat. Text pe ecran: \"Timpul Tău, Prețuit.\"\n[Scenă 2: (4-9s)] Vedere largă: tableta pe o masă de marmură într-un spațiu luminos, liniștit. O atingere discretă. Interfața trece instantaneu la un dashboard personalizat. Text pe ecran: \"Intră în Lumea Ta.\"\n[Scenă 3: (9-15s)] Persoana (siluetă elegantă) savurează un moment de calm, interacționând fără efort cu ecranul. Sentiment de control și serenitate. Final cu logo subtil și text: \"Ritualul de Acces. Eleganță Fără Efort.\" Muzică ambientală sofisticată. Fără voce.",
-      "hashtags": [
-        "#LuxDigital",
-        "#QuietLuxury"
-      ]
-    }
+    "badge": "TRENDING"
+  },
+  {
+    "id": "manual-sony-headphones",
+    "slug": "sony-wh-1000xm5-black",
+    "name": "Sony WH-1000XM5",
+    "price": 1499,
+    "comparePrice": 1800,
+    "category": "executive",
+    "description": "Cea mai bună tehnologie de anulare a zgomotului din lume, acum într-un design mai elegant și mai ușor. Sony WH-1000XM5 oferă o experiență audio pură.",
+    "features": [
+      "Noise Cancelling de top",
+      "8 microfoane pentru apeluri clare",
+      "Autonomie 30 de ore"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1618366712010-8c0e2e0551ca?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "inStock": true,
+    "affiliateUrl": "https://l.profitshare.ro/l/15748651?redirect=https%3A%2F%2Fwww.emag.ro%2Fcasti-sony-wh-1000xm5b-over-ear-wireless-bluetooth-noise-cancelling-mic-autonomie-30-ore-negru-wh1000xm5b-ce7%2Fpd%2FDG219XMBM%2F",
+    "isViral": false,
+    "badge": "EXECUTIVE CHOICE"
   }
 ]

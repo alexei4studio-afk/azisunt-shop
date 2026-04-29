@@ -13,16 +13,22 @@ This repository is linked to a [v0](https://v0.app) project. You can continue de
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev -- -p 3001
 # or
-yarn dev
+yarn dev -p 3001
 # or
-pnpm dev
+pnpm dev --port 3001
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Admin Dashboard
+
+The project includes an admin dashboard for managing products.
+
+Open http://localhost:3001/admin to access it.
 
 ## Learn More
 
@@ -34,4 +40,3 @@ To learn more, take a look at the following resources:
 
 <a href="https://v0.app/chat/api/kiro/clone/alexei4studio-afk/v0-e-commerce-storefront-design" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
 $response
-

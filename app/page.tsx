@@ -5,6 +5,7 @@ import { ProductCard } from '@/components/product-card'
 import { getFeaturedProducts } from '@/lib/products'
 import Link from 'next/link'
 import { ArrowRight, Sparkles, TrendingUp, ShieldCheck } from 'lucide-react'
+import { NewsletterForm } from '@/components/newsletter-form'
 
 export default async function HomePage() {
   const featuredProducts = await getFeaturedProducts()
@@ -14,28 +15,28 @@ export default async function HomePage() {
       name: 'The Sanctuary',
       slug: 'sanctuary',
       description: 'Home & Wellness',
-      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1000',
+      image: 'https://images.unsplash.com/photo-1616489953149-60144569561b?q=80&w=1000&auto=format&fit=crop',
       accent: 'Essential'
     },
     {
       name: 'The Executive',
       slug: 'executive',
       description: 'Tech & Productivity',
-      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1616533703901-2a5b6f345686?w=1000',
+      image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=1000&auto=format&fit=crop',
       accent: 'Innovation'
     },
     {
       name: 'The Voyager',
       slug: 'voyager',
       description: 'Lifestyle & Travel',
-      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000',
+      image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1000&auto=format&fit=crop',
       accent: 'Escape'
     },
     {
       name: 'The Athlete',
       slug: 'athlete',
       description: 'Sport & Performance',
-      image: 'https://images.weserv.nl/?url=images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1000',
+      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop',
       accent: 'Power'
     }
   ]
@@ -64,9 +65,9 @@ export default async function HomePage() {
                 <div className="mx-auto w-12 h-12 bg-secondary rounded-2xl flex items-center justify-center">
                   <Sparkles className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold uppercase tracking-widest">AI Curation</h3>
+                <h3 className="text-lg font-bold uppercase tracking-widest">Expert Selection</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Fiecare produs este trecut prin filtrul nostru AI pentru a asigura calitatea și relevanța în piața curentă.
+                  Fiecare produs este trecut prin filtrul nostru de design pentru a asigura calitatea și relevanța în piața curentă.
                 </p>
               </div>
               <div className="space-y-4">
@@ -140,6 +141,23 @@ export default async function HomePage() {
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* VIP Access Section */}
+        <section className="py-32 bg-black border-t border-white/5 relative overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-primary to-transparent opacity-50" />
+          
+          <div className="mx-auto max-w-7xl px-6 lg:px-12 text-center">
+            <div className="mb-12">
+              <p className="text-primary text-[10px] font-black uppercase tracking-[0.5em] mb-4">Limited Availability</p>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">VIP Priority Access</h2>
+              <p className="text-white/40 max-w-xl mx-auto font-light leading-relaxed">
+                Fii primul care află despre noile selecții virale și primește acces exclusiv la edițiile limitate AZISUNT SHOP.
+              </p>
+            </div>
+
+            <NewsletterForm />
           </div>
         </section>
 
