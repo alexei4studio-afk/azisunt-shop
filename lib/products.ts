@@ -1,9 +1,16 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+let _supabase: SupabaseClient | null = null
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
+function getSupabase() {
+  if (!_supabase) {
+    _supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    )
+  }
+  return _supabase
+}
 
 export interface Product {
   id: string
@@ -47,7 +54,7 @@ function mapRow(row: any): Product {
 
 async function fetchProducts(): Promise<Product[]> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('*, product_images(url, is_primary)')
       .order('created_at', { ascending: false })
@@ -66,7 +73,7 @@ export async function getShopifyProducts(): Promise<Product[]> {
 
 export async function getProductBySlug(slug: string): Promise<Product | undefined> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('*, product_images(url, is_primary)')
       .eq('slug', slug)
@@ -83,7 +90,7 @@ export async function getProductsByCategory(category: string): Promise<Product[]
   if (category === 'all') return fetchProducts()
 
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('*, product_images(url, is_primary)')
       .eq('category', category)
@@ -99,7 +106,7 @@ export async function getProductsByCategory(category: string): Promise<Product[]
 
 export async function getFeaturedProducts(): Promise<Product[]> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('*, product_images(url, is_primary)')
       .order('created_at', { ascending: false })
@@ -115,7 +122,7 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 
 export async function getNewProducts(): Promise<Product[]> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('*, product_images(url, is_primary)')
       .order('created_at', { ascending: false })
@@ -135,7 +142,7 @@ export async function getAllProducts(): Promise<Product[]> {
 
 export async function getCategories(): Promise<string[]> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('products')
       .select('category')
 
